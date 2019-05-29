@@ -42,7 +42,6 @@ class __TwigTemplate_a2fd9554519d812c7f3a5f72249534a82f5357482e8f009503849928480
         echo ". ";
         echo (($this->getAttribute($this->getAttribute(($context["site"] ?? null), "metadata", [], "any", false, true), "rights", [], "any", true, true)) ? (_twig_default_filter($this->getAttribute($this->getAttribute(($context["site"] ?? null), "metadata", [], "any", false, true), "rights", []), "All rights reserved.")) : ("All rights reserved."));
         echo "</li>
-\t\t\t<li>Design: <a href=\"http://html5up.net\">HTML5 UP</a></li>
 \t\t</ul>
 \t</footer>
 ";
@@ -78,7 +77,6 @@ class __TwigTemplate_a2fd9554519d812c7f3a5f72249534a82f5357482e8f009503849928480
 \t\t{% include 'partials/components/social_linkgroup.html.twig' %}
 \t\t<ul class=\"copyright\">
 \t\t\t<li>© {{ 'now'|date('Y') }}, {{ config.site.author.name }}. {{ site.metadata.rights|default('All rights reserved.') }}</li>
-\t\t\t<li>Design: <a href=\"http://html5up.net\">HTML5 UP</a></li>
 \t\t</ul>
 \t</footer>
 ", "partials/footer.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\themes\\landed\\templates\\partials\\footer.html.twig");

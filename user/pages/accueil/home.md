@@ -7,7 +7,6 @@ banner:
     hero_image: portrait.jpg
     quips:
         - 'donne voix à vos projets'
-        - 'et projette sa voix où que vous vouliez'
 intro:
     headline: 'Quentin donne de la voix'
     hero_image: micro3.jpg

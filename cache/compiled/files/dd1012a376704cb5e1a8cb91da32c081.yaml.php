@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/skye-prod/user/config/site.yaml',
-    'modified' => 1559133467,
+    'modified' => 1559150820,
     'data' => [
         'title' => 'Skye prod',
         'default_lang' => 'fr',
@@ -12,7 +12,8 @@ return [
         ],
         'taxonomies' => [
             0 => 'category',
-            1 => 'tag'
+            1 => 'tag',
+            2 => 'pagetype'
         ],
         'summary' => [
             'enabled' => true,

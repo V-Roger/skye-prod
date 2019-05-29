@@ -5,19 +5,16 @@ taxonomy:
     category:
         - feature
 teaser: 'Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan'
-hero_image: images/pic05.jpg
 spotlight:
-    image: images/pic03.jpg
+    image: images/micro2.jpg
     headline: 'Interdum amet non magna accumsan'
     subheading: 'Nunc commodo accumsan eget id nisi eu col volutpat magna'
     blurb: 'Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.'
 sidebars:
     portals:
         -
-            path: /dummy/magna
-            words: 33
-        -
             path: /dummy/amet
+            button_text: Commander
 ---
 
 ### Dolore Amet Consequat
