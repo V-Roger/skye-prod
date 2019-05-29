@@ -1,7 +1,15 @@
-title: Grav
+title: 'Skye prod'
+default_lang: fr
 author:
-  name: Joe Bloggs
-  email: 'joe@example.com'
-metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
-
+  name: 'Virgil Roger'
+  email: roger.virgil@gmail.com
+taxonomies:
+  - category
+  - tag
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog

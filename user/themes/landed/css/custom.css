@@ -1,0 +1,12 @@
+#header {
+  background: transparent;
+  box-shadow: none;
+}
+
+#banner {
+  margin-top: -3.5em;
+}
+
+#banner:after {
+  opacity: 0.8;
+}
