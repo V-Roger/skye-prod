@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/skye-prod/user/config/site.yaml',
-    'modified' => 1559150820,
+    'modified' => 1559194330,
     'data' => [
         'title' => 'Skye prod',
         'default_lang' => 'fr',
@@ -23,6 +23,13 @@ return [
         ],
         'blog' => [
             'route' => '/blog'
+        ],
+        'menu' => [
+            0 => [
+                'url' => '#',
+                'text' => 'Sign Up',
+                'classes' => 'button primary'
+            ]
         ]
     ]
 ];

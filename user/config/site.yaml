@@ -14,3 +14,7 @@ summary:
   delimiter: '==='
 blog:
   route: /blog
+menu:
+    - url: '#'
+      text: 'Sign Up'
+      classes: 'button primary'

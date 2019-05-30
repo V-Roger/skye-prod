@@ -1,5 +1,5 @@
 ---
-title: 'Voix off'
+title: 'Voice-over'
 taxonomy:
     category:
         - feature
@@ -7,7 +7,7 @@ taxonomy:
         - feature
 teaser: 'Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan'
 spotlight:
-    image: images/micro2.jpg
+    image: images/micro4.jpg
     headline: 'Interdum amet non magna accumsan'
     subheading: 'Nunc commodo accumsan eget id nisi eu col volutpat magna'
     blurb: 'Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.'

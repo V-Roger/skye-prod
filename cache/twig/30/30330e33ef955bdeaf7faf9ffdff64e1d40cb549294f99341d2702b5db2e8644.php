@@ -40,7 +40,7 @@ class __TwigTemplate_9d9025b6e4c95489f7dd4946328b1527c38ef61418b2a8d0e097bde1703
             echo $this->getAttribute($context["link"], "target", []);
             echo "\"";
             if ($this->getAttribute($context["link"], "icon", [])) {
-                echo " class=\"icon alt fa-";
+                echo " class=\"icon fa-";
                 echo $this->getAttribute($context["link"], "icon", []);
                 echo "\"";
             }
@@ -85,7 +85,7 @@ class __TwigTemplate_9d9025b6e4c95489f7dd4946328b1527c38ef61418b2a8d0e097bde1703
         return new Source("{% set links =  page.find('/components/links/_social').header.links %}
 <ul class=\"icons\">
 \t{% for link in links %}
-\t\t<li><a href=\"{{ link.target }}\"{% if link.icon %} class=\"icon alt fa-{{ link.icon }}\"{% endif %}><span class=\"label\">{{ link.text }}</span></a></li>
+\t\t<li><a href=\"{{ link.target }}\"{% if link.icon %} class=\"icon fa-{{ link.icon }}\"{% endif %}><span class=\"label\">{{ link.text }}</span></a></li>
 \t{% endfor %}
 </ul>
 ", "partials/components/social_linkgroup.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\themes\\landed\\templates\\partials\\components\\social_linkgroup.html.twig");
