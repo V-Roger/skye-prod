@@ -16,7 +16,8 @@ intro:
         - 'Morbi enim nascetur et placerat lorem sed iaculis neque ante adipiscing adipiscing metus massa. Blandit orci porttitor semper. Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem ipsum dolor nullam.'
 features:
     items:
-        '@taxonomy.pagetype': 'feature'
+        '@taxonomy.pagetype': feature
     order:
         by: default
 ---
+

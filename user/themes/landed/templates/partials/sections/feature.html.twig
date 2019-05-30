@@ -1,5 +1,5 @@
 <!-- {{ f.slug }} -->
-	{% set extra_classes = placing is even ? ' style3 left' : 'style2 right' %}
+	{% set extra_classes = placing is even ? 'style1 left' : 'style1 right' %}
 	{% set feature_data = f.header.spotlight %}
 	<section id="{{ f.slug }}" class="spotlight {{ extra_classes }}">
 		{% if feature_data.image %}
