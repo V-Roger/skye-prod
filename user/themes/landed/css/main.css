@@ -3046,10 +3046,10 @@ input, select, textarea {
 			-webkit-transform: translate(0,0);
 			-ms-transform: translate(0,0);
 			transform: translate(0,0);
-			-moz-transition: -moz-transform 1s ease, opacity 1s ease;
-			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
-			transition: transform 1s ease, opacity 1s ease;
+			-moz-transition: -moz-transform 400ms ease, opacity 400ms ease;
+			-webkit-transition: -webkit-transform 400ms ease, opacity 400ms ease;
+			-ms-transition: -ms-transform 400ms ease, opacity 400ms ease;
+			transition: transform 400ms ease, opacity 400ms ease;
 			background: rgba(23, 24, 32, 0.95);
 			border-style: solid;
 			opacity: 1;
@@ -3061,10 +3061,10 @@ input, select, textarea {
 			-webkit-transform: translate(0,0);
 			-ms-transform: translate(0,0);
 			transform: translate(0,0);
-			-moz-transition: -moz-transform 0.75s ease, opacity 1s ease-in;
-			-webkit-transition: -webkit-transform 0.75s ease, opacity 1s ease-in;
-			-ms-transition: -ms-transform 0.75s ease, opacity 1s ease-in;
-			transition: transform 0.75s ease, opacity 1s ease-in;
+			-moz-transition: -moz-transform 0.75s ease, opacity 400ms ease-in;
+			-webkit-transition: -webkit-transform 0.75s ease, opacity 400ms ease-in;
+			-ms-transition: -ms-transform 0.75s ease, opacity 400ms ease-in;
+			transition: transform 0.75s ease, opacity 400ms ease-in;
 			-moz-transition-delay: 0.2s;
 			-webkit-transition-delay: 0.2s;
 			-ms-transition-delay: 0.2s;
@@ -3230,10 +3230,10 @@ input, select, textarea {
 			-webkit-transform: translate(0,0);
 			-ms-transform: translate(0,0);
 			transform: translate(0,0);
-			-moz-transition: -moz-transform 1s ease, opacity 1s ease;
-			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
-			transition: transform 1s ease, opacity 1s ease;
+			-moz-transition: -moz-transform 400ms ease, opacity 400ms ease;
+			-webkit-transition: -webkit-transform 400ms ease, opacity 400ms ease;
+			-ms-transition: -ms-transform 400ms ease, opacity 400ms ease;
+			transition: transform 400ms ease, opacity 400ms ease;
 			opacity: 1;
 		}
 
@@ -3250,10 +3250,10 @@ input, select, textarea {
 			-webkit-transform: translate(0,0);
 			-ms-transform: translate(0,0);
 			transform: translate(0,0);
-			-moz-transition: -moz-transform 1s ease, opacity 1s ease;
-			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
-			transition: transform 1s ease, opacity 1s ease;
+			-moz-transition: -moz-transform 400ms ease, opacity 400ms ease;
+			-webkit-transition: -webkit-transform 400ms ease, opacity 400ms ease;
+			-ms-transition: -ms-transform 400ms ease, opacity 400ms ease;
+			transition: transform 400ms ease, opacity 400ms ease;
 			opacity: 1;
 		}
 
@@ -3266,10 +3266,10 @@ input, select, textarea {
 		}
 
 		.wrapper.fade > .container {
-			-moz-transition: opacity 1s ease;
-			-webkit-transition: opacity 1s ease;
-			-ms-transition: opacity 1s ease;
-			transition: opacity 1s ease;
+			-moz-transition: opacity 400ms ease;
+			-webkit-transition: opacity 400ms ease;
+			-ms-transition: opacity 400ms ease;
+			transition: opacity 400ms ease;
 			opacity: 1;
 		}
 
