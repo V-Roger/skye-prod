@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1559194333,
-    'checksum' => '25228ac13011c11e4011bb33e33705dd',
+    'timestamp' => 1560536048,
+    'checksum' => 'd46604310c987f8a7c20ecd7bcd18d41',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -23,7 +23,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1559194330
+                'modified' => 1560535712
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -35,7 +35,7 @@ return [
             ],
             'themes/landed' => [
                 'file' => 'user/config/themes/landed.yaml',
-                'modified' => 1559133277
+                'modified' => 1560536047
             ]
         ],
         'system/config' => [
@@ -659,13 +659,6 @@ node_modules'
             'routes' => NULL,
             'blog' => [
                 'route' => '/blog'
-            ],
-            'menu' => [
-                0 => [
-                    'url' => '#',
-                    'text' => 'Sign Up',
-                    'classes' => 'button primary'
-                ]
             ]
         ],
         'streams' => [
@@ -906,7 +899,7 @@ node_modules'
             'landed' => [
                 'enabled' => true,
                 'dropdown' => [
-                    'enabled' => true
+                    'enabled' => false
                 ]
             ]
         ]

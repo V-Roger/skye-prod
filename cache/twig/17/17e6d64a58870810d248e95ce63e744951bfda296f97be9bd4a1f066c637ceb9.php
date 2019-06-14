@@ -26,65 +26,121 @@ class __TwigTemplate_9556627ae8356a4c5a5b8e36d96b1639cd188fc091364f16a21ca620dc2
 
     protected function doDisplay(array $context, array $blocks = [])
     {
-        // line 22
+        // line 25
         echo "
 <ul>
     ";
-        // line 24
+        // line 27
         if ($this->getAttribute($this->getAttribute(($context["theme_config"] ?? null), "dropdown", []), "enabled", [])) {
-            // line 25
+            // line 28
             echo "        ";
             echo $this->getAttribute($this, "loop", [0 => ($context["pages"] ?? null)], "method");
             echo "
     ";
         } else {
-            // line 27
+            // line 30
             echo "        ";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["pages"] ?? null), "children", []), "visible", []));
             foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-                // line 28
+                // line 31
                 echo "            ";
                 $context["current_page"] = ((($this->getAttribute($context["page"], "active", []) || $this->getAttribute($context["page"], "activeChild", []))) ? ("selected") : (""));
-                // line 29
-                echo "            <li class=\"";
-                echo ($context["current_page"] ?? null);
-                echo "\">
-                <a href=\"";
-                // line 30
-                echo $this->getAttribute($context["page"], "url", []);
-                echo "\" class=\"";
-                echo $this->getAttribute($this->getAttribute($context["page"], "header", []), "menu_classes", []);
-                echo "\">
-                    ";
-                // line 31
-                echo $this->getAttribute($context["page"], "menu", []);
-                echo "
-                </a>
-            </li>
-        ";
+                // line 32
+                echo "                ";
+                if (($this->getAttribute($this->getAttribute($this->getAttribute($context["page"], "children", []), "visible", []), "count", []) > 0)) {
+                    // line 33
+                    echo "                    <li class=\"";
+                    echo ($context["current_page"] ?? null);
+                    echo "\">
+                        <a href=\"";
+                    // line 34
+                    echo $this->getAttribute($context["page"], "url", []);
+                    echo "\" class=\"";
+                    echo $this->getAttribute($this->getAttribute($context["page"], "header", []), "menu_classes", []);
+                    echo "\">
+                            ";
+                    // line 35
+                    echo $this->getAttribute($context["page"], "menu", []);
+                    echo "
+                        </a>
+                        <span class=\"children-trigger\" onclick=\"\$(this).addClass('active')\">
+                            +
+                        </span>
+                        <ul>
+                            ";
+                    // line 41
+                    $context['_parent'] = $context;
+                    $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($context["page"], "children", []), "visible", []));
+                    foreach ($context['_seq'] as $context["_key"] => $context["child"]) {
+                        // line 42
+                        echo "                                <li class=\"";
+                        echo ($context["current_page"] ?? null);
+                        echo "\" onclick=\"\$('.menu-icon').removeClass('clicked');\">
+                                    <a href=\"";
+                        // line 43
+                        echo $this->getAttribute($context["child"], "url", []);
+                        echo "\" class=\"";
+                        echo $this->getAttribute($this->getAttribute($context["child"], "header", []), "menu_classes", []);
+                        echo "\">
+                                        ";
+                        // line 44
+                        echo $this->getAttribute($context["child"], "menu", []);
+                        echo "
+                                    </a>
+                                </li>
+                            ";
+                    }
+                    $_parent = $context['_parent'];
+                    unset($context['_seq'], $context['_iterated'], $context['_key'], $context['child'], $context['_parent'], $context['loop']);
+                    $context = array_intersect_key($context, $_parent) + $_parent;
+                    // line 48
+                    echo "                        </ul>
+                    </li>
+                ";
+                } else {
+                    // line 51
+                    echo "                    <li class=\"";
+                    echo ($context["current_page"] ?? null);
+                    echo "\" onclick=\"\$('.menu-icon').removeClass('clicked');\">
+                        <a href=\"";
+                    // line 52
+                    echo $this->getAttribute($context["page"], "url", []);
+                    echo "\" class=\"";
+                    echo $this->getAttribute($this->getAttribute($context["page"], "header", []), "menu_classes", []);
+                    echo "\">
+                            ";
+                    // line 53
+                    echo $this->getAttribute($context["page"], "menu", []);
+                    echo "
+                        </a>
+                    </li>
+                ";
+                }
+                // line 57
+                echo "        ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 35
+            // line 58
             echo "    ";
         }
-        // line 36
+        // line 59
         echo "    ";
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["site"] ?? null), "menu", []));
         foreach ($context['_seq'] as $context["_key"] => $context["mitem"]) {
-            // line 37
-            echo "        <li>
+            // line 60
+            echo "        <li onclick=\"\$('.menu-icon').removeClass('clicked');\">
             <a href=\"";
-            // line 38
+            // line 61
             echo $this->getAttribute($context["mitem"], "url", []);
             echo "\" class=\"";
             echo $this->getAttribute($context["mitem"], "classes", []);
             echo "\">
                 ";
-            // line 39
+            // line 62
             echo $this->getAttribute($context["mitem"], "text", []);
             echo "
             </a>
@@ -94,7 +150,7 @@ class __TwigTemplate_9556627ae8356a4c5a5b8e36d96b1639cd188fc091364f16a21ca620dc2
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['mitem'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 43
+        // line 66
         echo "</ul>
 
 ";
@@ -126,7 +182,7 @@ class __TwigTemplate_9556627ae8356a4c5a5b8e36d96b1639cd188fc091364f16a21ca620dc2
                     // line 5
                     echo "            <li class=\"has-children ";
                     echo ($context["current_page"] ?? null);
-                    echo "\">
+                    echo "\" onclick=\"\$('.menu-icon').removeClass('clicked');\">
                 <a href=\"";
                     // line 6
                     echo $this->getAttribute($context["p"], "url", []);
@@ -138,34 +194,37 @@ class __TwigTemplate_9556627ae8356a4c5a5b8e36d96b1639cd188fc091364f16a21ca620dc2
                     echo $this->getAttribute($context["p"], "menu", []);
                     echo "
                 </a>
+                <span class=\"children-trigger\" onclick=\"\$(this).removeClass('active');\">
+                    +
+                </span>
                 <ul>
                     ";
-                    // line 10
+                    // line 13
                     echo $this->getAttribute($this, "loop", [0 => $context["p"]], "method");
                     echo "
                 </ul>
             </li>
         ";
                 } else {
-                    // line 14
+                    // line 17
                     echo "            <li class=\"";
                     echo ($context["current_page"] ?? null);
-                    echo "\">
+                    echo "\" onclick=\"\$('.menu-icon').removeClass('clicked');\">
                 <a href=\"";
-                    // line 15
+                    // line 18
                     echo $this->getAttribute($context["p"], "url", []);
                     echo "\" class=\"";
                     echo $this->getAttribute($this->getAttribute($context["p"], "header", []), "menu_classes", []);
                     echo "\">
                     ";
-                    // line 16
+                    // line 19
                     echo $this->getAttribute($context["p"], "menu", []);
                     echo "
                 </a>
             </li>
         ";
                 }
-                // line 20
+                // line 23
                 echo "    ";
             }
             $_parent = $context['_parent'];
@@ -196,7 +255,7 @@ class __TwigTemplate_9556627ae8356a4c5a5b8e36d96b1639cd188fc091364f16a21ca620dc2
 
     public function getDebugInfo()
     {
-        return array (  169 => 20,  162 => 16,  156 => 15,  151 => 14,  144 => 10,  138 => 7,  132 => 6,  127 => 5,  124 => 4,  121 => 3,  116 => 2,  104 => 1,  98 => 43,  88 => 39,  82 => 38,  79 => 37,  74 => 36,  71 => 35,  61 => 31,  55 => 30,  50 => 29,  47 => 28,  42 => 27,  36 => 25,  34 => 24,  30 => 22,);
+        return array (  228 => 23,  221 => 19,  215 => 18,  210 => 17,  203 => 13,  194 => 7,  188 => 6,  183 => 5,  180 => 4,  177 => 3,  172 => 2,  160 => 1,  154 => 66,  144 => 62,  138 => 61,  135 => 60,  130 => 59,  127 => 58,  121 => 57,  114 => 53,  108 => 52,  103 => 51,  98 => 48,  88 => 44,  82 => 43,  77 => 42,  73 => 41,  64 => 35,  58 => 34,  53 => 33,  50 => 32,  47 => 31,  42 => 30,  36 => 28,  34 => 27,  30 => 25,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -213,16 +272,19 @@ class __TwigTemplate_9556627ae8356a4c5a5b8e36d96b1639cd188fc091364f16a21ca620dc2
     {% for p in page.children.visible %}
         {% set current_page = (p.active or p.activeChild) ? 'selected' : '' %}
         {% if p.children.visible.count > 0 %}
-            <li class=\"has-children {{ current_page }}\">
+            <li class=\"has-children {{ current_page }}\" onclick=\"\$('.menu-icon').removeClass('clicked');\">
                 <a href=\"{{ p.url }}\" class=\"{{ p.header.menu_classes }}\">
                     {{ p.menu }}
                 </a>
+                <span class=\"children-trigger\" onclick=\"\$(this).removeClass('active');\">
+                    +
+                </span>
                 <ul>
                     {{ _self.loop(p) }}
                 </ul>
             </li>
         {% else %}
-            <li class=\"{{ current_page }}\">
+            <li class=\"{{ current_page }}\" onclick=\"\$('.menu-icon').removeClass('clicked');\">
                 <a href=\"{{ p.url }}\" class=\"{{ p.header.menu_classes }}\">
                     {{ p.menu }}
                 </a>
@@ -237,15 +299,35 @@ class __TwigTemplate_9556627ae8356a4c5a5b8e36d96b1639cd188fc091364f16a21ca620dc2
     {% else %}
         {% for page in pages.children.visible %}
             {% set current_page = (page.active or page.activeChild) ? 'selected' : '' %}
-            <li class=\"{{ current_page }}\">
-                <a href=\"{{ page.url }}\" class=\"{{ page.header.menu_classes }}\">
-                    {{ page.menu }}
-                </a>
-            </li>
+                {% if page.children.visible.count > 0 %}
+                    <li class=\"{{ current_page }}\">
+                        <a href=\"{{ page.url }}\" class=\"{{ page.header.menu_classes }}\">
+                            {{ page.menu }}
+                        </a>
+                        <span class=\"children-trigger\" onclick=\"\$(this).addClass('active')\">
+                            +
+                        </span>
+                        <ul>
+                            {% for child in page.children.visible %}
+                                <li class=\"{{ current_page }}\" onclick=\"\$('.menu-icon').removeClass('clicked');\">
+                                    <a href=\"{{ child.url }}\" class=\"{{ child.header.menu_classes }}\">
+                                        {{ child.menu }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% else %}
+                    <li class=\"{{ current_page }}\" onclick=\"\$('.menu-icon').removeClass('clicked');\">
+                        <a href=\"{{ page.url }}\" class=\"{{ page.header.menu_classes }}\">
+                            {{ page.menu }}
+                        </a>
+                    </li>
+                {% endif %}
         {% endfor %}
     {% endif %}
     {% for mitem in site.menu %}
-        <li>
+        <li onclick=\"\$('.menu-icon').removeClass('clicked');\">
             <a href=\"{{ mitem.url }}\" class=\"{{ mitem.classes }}\">
                 {{ mitem.text }}
             </a>

@@ -4,7 +4,7 @@ visible: true
 banner:
     headline: 'Skye prod'
     background_image: micro.jpg
-    hero_image: portrait.jpg
+    hero_image: quentin.jpg
     quips:
         - 'donne voix à vos projets'
 intro:
@@ -19,5 +19,12 @@ features:
         '@taxonomy.pagetype': feature
     order:
         by: default
+signup:
+    headline: Contactez-moi
+    byline: 'Ante metus praesent faucibus ante integer id accumsan eleifend'
+    form:
+        target: 'mailto:roger.virgil@gmail.com'
+        placeholder: 'Adresse email'
+        button_text: 'C''est parti'
 ---
 

@@ -47,9 +47,24 @@
     {% block header %}
         <!-- Header -->
             <header id="header">
-                <h1 id="logo"><a href="{{ base_url == '' ? '/' : base_url }}">{{ site.title }}</a></h1>
+                <h1 id="logo">
+                    <a href="{{ base_url == '' ? '/' : base_url }}">
+                        <img src="{{ url('theme://images/logo.png') }}" alt="{{ site.title }}" />
+                    </a>
+                </h1>
 
                 {% block header_navigation %}
+                    <div class="menu-icon" onclick="$(this).toggleClass('clicked')">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
                     <nav id="nav">
                         {% include 'partials/navigation.html.twig' %}
                     </nav>

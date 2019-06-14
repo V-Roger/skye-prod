@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/skye-prod/user/data/notifications/236c35d53def80243aae9b1bb1636146.yaml',
-    'modified' => 1559234632,
+    'modified' => 1560533776,
     'data' => [
-        'last_checked' => 1559234632,
+        'last_checked' => 1560533776,
         'data' => [
             'feed' => [
                 0 => [

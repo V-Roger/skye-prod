@@ -2,16 +2,19 @@
     {% for p in page.children.visible %}
         {% set current_page = (p.active or p.activeChild) ? 'selected' : '' %}
         {% if p.children.visible.count > 0 %}
-            <li class="has-children {{ current_page }}">
+            <li class="has-children {{ current_page }}" onclick="$('.menu-icon').removeClass('clicked');">
                 <a href="{{ p.url }}" class="{{ p.header.menu_classes }}">
                     {{ p.menu }}
                 </a>
+                <span class="children-trigger" onclick="$(this).removeClass('active');">
+                    +
+                </span>
                 <ul>
                     {{ _self.loop(p) }}
                 </ul>
             </li>
         {% else %}
-            <li class="{{ current_page }}">
+            <li class="{{ current_page }}" onclick="$('.menu-icon').removeClass('clicked');">
                 <a href="{{ p.url }}" class="{{ p.header.menu_classes }}">
                     {{ p.menu }}
                 </a>
@@ -26,15 +29,35 @@
     {% else %}
         {% for page in pages.children.visible %}
             {% set current_page = (page.active or page.activeChild) ? 'selected' : '' %}
-            <li class="{{ current_page }}">
-                <a href="{{ page.url }}" class="{{ page.header.menu_classes }}">
-                    {{ page.menu }}
-                </a>
-            </li>
+                {% if page.children.visible.count > 0 %}
+                    <li class="{{ current_page }}">
+                        <a href="{{ page.url }}" class="{{ page.header.menu_classes }}">
+                            {{ page.menu }}
+                        </a>
+                        <span class="children-trigger" onclick="$(this).addClass('active')">
+                            +
+                        </span>
+                        <ul>
+                            {% for child in page.children.visible %}
+                                <li class="{{ current_page }}" onclick="$('.menu-icon').removeClass('clicked');">
+                                    <a href="{{ child.url }}" class="{{ child.header.menu_classes }}">
+                                        {{ child.menu }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% else %}
+                    <li class="{{ current_page }}" onclick="$('.menu-icon').removeClass('clicked');">
+                        <a href="{{ page.url }}" class="{{ page.header.menu_classes }}">
+                            {{ page.menu }}
+                        </a>
+                    </li>
+                {% endif %}
         {% endfor %}
     {% endif %}
     {% for mitem in site.menu %}
-        <li>
+        <li onclick="$('.menu-icon').removeClass('clicked');">
             <a href="{{ mitem.url }}" class="{{ mitem.classes }}">
                 {{ mitem.text }}
             </a>

@@ -1,5 +1,5 @@
 ---
-title: 'Voice-over'
+title: Voice-over
 taxonomy:
     category:
         - feature

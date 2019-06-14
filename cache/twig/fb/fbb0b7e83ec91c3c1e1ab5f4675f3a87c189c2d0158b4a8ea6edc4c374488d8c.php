@@ -65,23 +65,23 @@ class __TwigTemplate_c58eec03a9b9d66b69af2508327e07a792aaf7f38977447d521e79a9dfd
     ";
         // line 47
         $this->displayBlock('header', $context, $blocks);
-        // line 63
+        // line 78
         echo "
     ";
-        // line 64
+        // line 79
         $this->displayBlock('body', $context, $blocks);
-        // line 92
+        // line 107
         echo "
 ";
-        // line 93
+        // line 108
         $this->displayBlock('footer', $context, $blocks);
-        // line 96
+        // line 111
         echo "
     </div>
 ";
-        // line 98
+        // line 113
         $this->displayBlock('bottom', $context, $blocks);
-        // line 101
+        // line 116
         echo "
 </body>
 </html>
@@ -200,114 +200,132 @@ class __TwigTemplate_c58eec03a9b9d66b69af2508327e07a792aaf7f38977447d521e79a9dfd
         // line 48
         echo "        <!-- Header -->
             <header id=\"header\">
-                <h1 id=\"logo\"><a href=\"";
-        // line 50
+                <h1 id=\"logo\">
+                    <a href=\"";
+        // line 51
         echo (((($context["base_url"] ?? null) == "")) ? ("/") : (($context["base_url"] ?? null)));
-        echo "\">";
+        echo "\">
+                        <img src=\"";
+        // line 52
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/logo.png");
+        echo "\" alt=\"";
         echo $this->getAttribute(($context["site"] ?? null), "title", []);
-        echo "</a></h1>
+        echo "\" />
+                    </a>
+                </h1>
 
                 ";
-        // line 52
+        // line 56
         $this->displayBlock('header_navigation', $context, $blocks);
-        // line 57
+        // line 72
         echo "
             </header>
 
             ";
-        // line 60
+        // line 75
         $this->displayBlock('banner', $context, $blocks);
-        // line 61
+        // line 76
         echo "
     ";
     }
 
-    // line 52
+    // line 56
     public function block_header_navigation($context, array $blocks = [])
     {
-        // line 53
-        echo "                    <nav id=\"nav\">
+        // line 57
+        echo "                    <div class=\"menu-icon\" onclick=\"\$(this).toggleClass('clicked')\">
+                        <div class=\"dot\"></div>
+                        <div class=\"dot\"></div>
+                        <div class=\"dot\"></div>
+                        <div class=\"dot\"></div>
+                        <div class=\"dot\"></div>
+                        <div class=\"dot\"></div>
+                        <div class=\"dot\"></div>
+                        <div class=\"dot\"></div>
+                        <div class=\"dot\"></div>
+                    </div>
+                    <nav id=\"nav\">
                         ";
-        // line 54
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 54)->display($context);
-        // line 55
+        // line 69
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 69)->display($context);
+        // line 70
         echo "                    </nav>
                 ";
     }
 
-    // line 60
+    // line 75
     public function block_banner($context, array $blocks = [])
     {
     }
 
-    // line 64
+    // line 79
     public function block_body($context, array $blocks = [])
     {
-        // line 65
+        // line 80
         echo "\t\t<div id=\"main\" class=\"wrapper style1\">
             <div class=\"container\">
 \t\t\t\t<header class=\"major\">
 \t\t\t\t\t<h2>";
-        // line 68
+        // line 83
         echo $this->getAttribute(($context["page"] ?? null), "title", []);
         echo "</h2>
                     ";
-        // line 69
+        // line 84
         if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "teaser", [])) {
-            // line 70
+            // line 85
             echo "                        <p>";
             echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "teaser", []);
             echo "</p>
                     ";
         }
-        // line 72
+        // line 87
         echo "                </header>
 
             ";
-        // line 74
-        $this->displayBlock('content', $context, $blocks);
         // line 89
+        $this->displayBlock('content', $context, $blocks);
+        // line 104
         echo "            </div>
         </div>
 ";
     }
 
-    // line 74
+    // line 89
     public function block_content($context, array $blocks = [])
     {
-        // line 75
+        // line 90
         echo "            <!-- Content -->
                 <section id=\"content\">
                     ";
-        // line 77
+        // line 92
         if (($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "hero_image", []) || $this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), "hero.jpg", [], "array"))) {
-            // line 78
+            // line 93
             echo "                        ";
             if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "hero_image", [])) {
-                // line 79
+                // line 94
                 echo "                            ";
                 $context["hero_url"] = $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc($this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "hero_image", []), [], "array"), "url", []));
-                // line 80
+                // line 95
                 echo "                        ";
             } else {
-                // line 81
+                // line 96
                 echo "                            ";
                 $context["hero_url"] = $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), "hero.jpg", [], "array"), "url", []);
-                // line 82
+                // line 97
                 echo "                            ";
-                // line 83
+                // line 98
                 echo "                        ";
             }
-            // line 84
+            // line 99
             echo "                        <span class=\"image fit\"><img src=\"";
             echo ($context["hero_url"] ?? null);
             echo "\" alt=\"";
             echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "hero_alt", []);
             echo "\" /></span> ";
-            // line 85
+            // line 100
             echo "                    ";
         }
-        // line 86
+        // line 101
         echo "                    ";
         echo $this->getAttribute(($context["page"] ?? null), "content", []);
         echo "
@@ -315,18 +333,18 @@ class __TwigTemplate_c58eec03a9b9d66b69af2508327e07a792aaf7f38977447d521e79a9dfd
             ";
     }
 
-    // line 93
+    // line 108
     public function block_footer($context, array $blocks = [])
     {
-        // line 94
+        // line 109
         echo "    ";
-        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 94)->display($context);
+        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 109)->display($context);
     }
 
-    // line 98
+    // line 113
     public function block_bottom($context, array $blocks = [])
     {
-        // line 99
+        // line 114
         echo "    ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", [0 => "bottom"], "method");
         echo "
@@ -345,7 +363,7 @@ class __TwigTemplate_c58eec03a9b9d66b69af2508327e07a792aaf7f38977447d521e79a9dfd
 
     public function getDebugInfo()
     {
-        return array (  330 => 99,  327 => 98,  322 => 94,  319 => 93,  311 => 86,  308 => 85,  302 => 84,  299 => 83,  297 => 82,  294 => 81,  291 => 80,  288 => 79,  285 => 78,  283 => 77,  279 => 75,  276 => 74,  270 => 89,  268 => 74,  264 => 72,  258 => 70,  256 => 69,  252 => 68,  247 => 65,  244 => 64,  239 => 60,  234 => 55,  232 => 54,  229 => 53,  226 => 52,  221 => 61,  219 => 60,  214 => 57,  212 => 52,  205 => 50,  201 => 48,  198 => 47,  192 => 39,  187 => 38,  184 => 37,  180 => 35,  177 => 34,  174 => 33,  171 => 32,  168 => 31,  165 => 30,  162 => 29,  159 => 28,  156 => 27,  153 => 26,  149 => 24,  146 => 23,  143 => 22,  140 => 21,  135 => 41,  133 => 37,  130 => 36,  128 => 26,  125 => 25,  123 => 21,  117 => 18,  113 => 17,  110 => 16,  108 => 15,  98 => 12,  95 => 11,  92 => 10,  85 => 101,  83 => 98,  79 => 96,  77 => 93,  74 => 92,  72 => 64,  69 => 63,  67 => 47,  61 => 44,  58 => 43,  56 => 10,  51 => 8,  43 => 2,  41 => 1,);
+        return array (  348 => 114,  345 => 113,  340 => 109,  337 => 108,  329 => 101,  326 => 100,  320 => 99,  317 => 98,  315 => 97,  312 => 96,  309 => 95,  306 => 94,  303 => 93,  301 => 92,  297 => 90,  294 => 89,  288 => 104,  286 => 89,  282 => 87,  276 => 85,  274 => 84,  270 => 83,  265 => 80,  262 => 79,  257 => 75,  252 => 70,  250 => 69,  236 => 57,  233 => 56,  228 => 76,  226 => 75,  221 => 72,  219 => 56,  210 => 52,  206 => 51,  201 => 48,  198 => 47,  192 => 39,  187 => 38,  184 => 37,  180 => 35,  177 => 34,  174 => 33,  171 => 32,  168 => 31,  165 => 30,  162 => 29,  159 => 28,  156 => 27,  153 => 26,  149 => 24,  146 => 23,  143 => 22,  140 => 21,  135 => 41,  133 => 37,  130 => 36,  128 => 26,  125 => 25,  123 => 21,  117 => 18,  113 => 17,  110 => 16,  108 => 15,  98 => 12,  95 => 11,  92 => 10,  85 => 116,  83 => 113,  79 => 111,  77 => 108,  74 => 107,  72 => 79,  69 => 78,  67 => 47,  61 => 44,  58 => 43,  56 => 10,  51 => 8,  43 => 2,  41 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -407,9 +425,24 @@ class __TwigTemplate_c58eec03a9b9d66b69af2508327e07a792aaf7f38977447d521e79a9dfd
     {% block header %}
         <!-- Header -->
             <header id=\"header\">
-                <h1 id=\"logo\"><a href=\"{{ base_url == '' ? '/' : base_url }}\">{{ site.title }}</a></h1>
+                <h1 id=\"logo\">
+                    <a href=\"{{ base_url == '' ? '/' : base_url }}\">
+                        <img src=\"{{ url('theme://images/logo.png') }}\" alt=\"{{ site.title }}\" />
+                    </a>
+                </h1>
 
                 {% block header_navigation %}
+                    <div class=\"menu-icon\" onclick=\"\$(this).toggleClass('clicked')\">
+                        <div class=\"dot\"></div>
+                        <div class=\"dot\"></div>
+                        <div class=\"dot\"></div>
+                        <div class=\"dot\"></div>
+                        <div class=\"dot\"></div>
+                        <div class=\"dot\"></div>
+                        <div class=\"dot\"></div>
+                        <div class=\"dot\"></div>
+                        <div class=\"dot\"></div>
+                    </div>
                     <nav id=\"nav\">
                         {% include 'partials/navigation.html.twig' %}
                     </nav>

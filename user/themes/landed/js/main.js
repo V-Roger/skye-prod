@@ -34,11 +34,11 @@
 			speed: 400
 		});
 
-	// Dropdowns.
-		$('#nav > ul').dropotron({
-			alignment: 'right',
-			hideDelay: 250
-		});
+	// // Dropdowns.
+	// 	$('#nav > ul').dropotron({
+	// 		alignment: 'right',
+	// 		hideDelay: 250
+	// 	});
 
 	// Nav.
 
