@@ -64,7 +64,7 @@ class __TwigTemplate_9556627ae8356a4c5a5b8e36d96b1639cd188fc091364f16a21ca620dc2
                     echo $this->getAttribute($context["page"], "menu", []);
                     echo "
                         </a>
-                        <span class=\"children-trigger\" onclick=\"\$(this).addClass('active')\">
+                        <span class=\"children-trigger\" onclick=\"\$(this).toggleClass('active')\">
                             +
                         </span>
                         <ul>
@@ -304,7 +304,7 @@ class __TwigTemplate_9556627ae8356a4c5a5b8e36d96b1639cd188fc091364f16a21ca620dc2
                         <a href=\"{{ page.url }}\" class=\"{{ page.header.menu_classes }}\">
                             {{ page.menu }}
                         </a>
-                        <span class=\"children-trigger\" onclick=\"\$(this).addClass('active')\">
+                        <span class=\"children-trigger\" onclick=\"\$(this).toggleClass('active')\">
                             +
                         </span>
                         <ul>
