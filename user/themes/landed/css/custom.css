@@ -115,14 +115,19 @@
   display: block;
 }
 
+#nav ul li .children-trigger + ul li:after {
+  bottom: 0px;
+} 
+
+#nav ul li .children-trigger + ul li:hover:after,
+#nav ul li .children-trigger + ul li:focus:after {
+  width: 60%;
+}
+
 @media all and (max-width: 800px) {
   #nav ul li .children-trigger.active + ul {
     left: 64px;
   }
-
-  #nav ul li .children-trigger + ul li:after {
-    bottom: 0px;    
-  }  
 }
 
 .content img {
