@@ -17,10 +17,16 @@
 
 #banner {
   margin-top: -3.5em;
+  background-position: left !important;
+  background-size: cover;
 }
 
 #banner:after {
-  opacity: 0.8;
+  opacity: 0.7;
+}
+
+#banner .content {
+  text-align: center;
 }
 
 #nav {

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1560536048,
-    'checksum' => 'd46604310c987f8a7c20ecd7bcd18d41',
+    'timestamp' => 1560790484,
+    'checksum' => '5dfeadbba5923f6bed395cd0138fdf90',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -31,7 +31,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1559136026
+                'modified' => 1560790007
             ],
             'themes/landed' => [
                 'file' => 'user/config/themes/landed.yaml',
@@ -41,33 +41,33 @@ return [
         'system/config' => [
             'backups' => [
                 'file' => 'system/config/backups.yaml',
-                'modified' => 1559132265
+                'modified' => 1560790003
             ],
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1559132265
+                'modified' => 1560790003
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
-                'modified' => 1559132265
+                'modified' => 1560790003
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1559132265
+                'modified' => 1560790003
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1559132265
+                'modified' => 1560790003
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1559132265
+                'modified' => 1560790003
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1559132302
+                'modified' => 1560790479
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
@@ -79,7 +79,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1559132279
+                'modified' => 1560790476
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',

@@ -9,7 +9,9 @@
 					<p>{{ banner_data.quips|join('<br/>') }}</p>
 				{% endif %}
 			</header>
-			<span class="image"><img src="{{ url('theme://images/' ~ (banner_data.hero_image ?: 'pic01.jpg') ) }}" alt="{{ banner_data.hero_alt }}" /></span>
+			{% if banner_data.hero_image %}
+				<span class="image"><img src="{{ url('theme://images/' ~ (banner_data.hero_image ?: 'pic01.jpg') ) }}" alt="{{ banner_data.hero_alt }}" /></span>
+			{% endif %}
 		</div>
 	{% if next_id %}
 		<a href="#{{ next_id }}" class="goto-next scrolly">Next</a>

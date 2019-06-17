@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/skye-prod/system/config/system.yaml',
-    'modified' => 1559132265,
+    'modified' => 1560790003,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/skye-prod/user/plugins/admin/languages/he.yaml',
-    'modified' => 1559132320,
+    'modified' => 1560790479,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'זוהי מהדורת ביתא! השימוש על אחריותכם בלבד...',

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/skye-prod/user/plugins/admin/blueprints/admin/pages/raw.yaml',
-    'modified' => 1559132319,
+    'modified' => 1560790479,
     'data' => [
         'rules' => [
             'slug' => [

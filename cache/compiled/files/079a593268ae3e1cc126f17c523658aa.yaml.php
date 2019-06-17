@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/skye-prod/user/plugins/form/blueprints.yaml',
-    'modified' => 1559132279,
+    'modified' => 1560790476,
     'data' => [
         'name' => 'Form',
-        'version' => '3.0.3',
+        'version' => '3.0.4',
         'testing' => false,
         'description' => 'Enables the forms handling',
         'icon' => 'check-square',

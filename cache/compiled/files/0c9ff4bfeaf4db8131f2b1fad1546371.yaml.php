@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/skye-prod/system/languages/pt.yaml',
-    'modified' => 1559132266,
+    'modified' => 1560790003,
     'data' => [
         'GRAV' => [
             'NICETIME' => [
