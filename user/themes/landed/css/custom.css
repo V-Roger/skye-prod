@@ -1,6 +1,6 @@
 *, *:before, *:after {
   font-family: 'Roboto Condensed', sans-serif !important;
-  fnot-weight: 300;
+  font-weight: 300;
 }
 
 #header {
@@ -11,12 +11,13 @@
 }
 
 #logo {
-  margin-top: 8px !important;
+  margin-top: 32px !important;
+  margin-left: 12px !important;
   z-index: 200;
 }
 
 #logo img {
-  max-height: 120px;
+  max-height: 160px;
   max-width: 80%;
 }
 
@@ -179,8 +180,8 @@ body {
 ========================================= */
 .menu-icon {
   position: absolute;
-  top: 50%;
-  right: 0;
+  top: 64px;
+  right: 24px;
   -webkit-transform: translate(-50%, -50%) scale(0.6);
   -moz-transform: translate(-50%, -50%) scale(0.6);
   -ms-transform: translate(-50%, -50%) scale(0.6);
