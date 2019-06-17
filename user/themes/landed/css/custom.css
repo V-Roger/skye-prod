@@ -1,3 +1,8 @@
+*, *:before, *:after {
+  font-family: 'Roboto Condensed', sans-serif !important;
+  fnot-weight: 300;
+}
+
 #header {
   display: block !important;
   background: transparent;
@@ -30,6 +35,15 @@
 
 #banner .content {
   text-align: center;
+}
+
+#banner .content header h2 {
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+#banner .content header p {
+  font-size: 2em;
 }
 
 #nav {
