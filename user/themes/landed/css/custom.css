@@ -11,14 +11,17 @@
 }
 
 #logo img {
-  max-height: 100%;
+  max-height: 120px;
   max-width: 80%;
 }
 
 #banner {
-  margin-top: -3.5em;
   background-position: left !important;
   background-size: cover;
+}
+
+#page-wrapper {
+  padding-top: 0;
 }
 
 #banner:after {
