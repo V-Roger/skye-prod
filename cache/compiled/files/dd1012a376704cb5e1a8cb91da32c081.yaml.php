@@ -2,13 +2,13 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/skye-prod/user/config/site.yaml',
-    'modified' => 1560535712,
+    'modified' => 1560855684,
     'data' => [
         'title' => 'Skye prod',
         'default_lang' => 'fr',
         'author' => [
-            'name' => 'Virgil Roger',
-            'email' => 'roger.virgil@gmail.com'
+            'name' => 'OMG Design',
+            'email' => 'contact@omg-design.com'
         ],
         'taxonomies' => [
             0 => 'category',

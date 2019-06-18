@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1560790484,
-    'checksum' => '5dfeadbba5923f6bed395cd0138fdf90',
+    'timestamp' => 1560855685,
+    'checksum' => '0cc7bdc9814621b3cc0d9698c2e3ee7c',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -23,7 +23,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1560535712
+                'modified' => 1560855684
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -31,7 +31,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1560790007
+                'modified' => 1560793210
             ],
             'themes/landed' => [
                 'file' => 'user/config/themes/landed.yaml',
@@ -638,8 +638,8 @@ node_modules'
             'title' => 'Skye prod',
             'default_lang' => 'fr',
             'author' => [
-                'name' => 'Virgil Roger',
-                'email' => 'roger.virgil@gmail.com'
+                'name' => 'OMG Design',
+                'email' => 'contact@omg-design.com'
             ],
             'taxonomies' => [
                 0 => 'category',
