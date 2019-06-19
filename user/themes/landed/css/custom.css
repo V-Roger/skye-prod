@@ -40,12 +40,16 @@
 
 @media screen and (max-width: 736px) {
   #banner {
-    background-position: right !important;
+    background-position: top left !important;
+    background-size: 75vh;
   }
 
   #banner .content {
     position: absolute;
-    bottom: 0;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+    padding: 0;
   }
 
   #banner .content p {
@@ -230,7 +234,7 @@ body {
 .menu-icon {
   position: absolute;
   top: 64px;
-  right: 24px;
+  left: 64px;
   -webkit-transform: translate(-50%, -50%) scale(0.6);
   -moz-transform: translate(-50%, -50%) scale(0.6);
   -ms-transform: translate(-50%, -50%) scale(0.6);
