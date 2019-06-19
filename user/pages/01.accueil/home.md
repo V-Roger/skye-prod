@@ -3,7 +3,7 @@ title: Accueil
 visible: true
 banner:
     headline: 'Skye prod'
-    background_image: quentin.jpg
+    background_image: spirale.png
     quips:
         - 'donne voix à vos projets'
 intro:

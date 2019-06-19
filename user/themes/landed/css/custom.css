@@ -3,6 +3,11 @@
   font-weight: 300;
 }
 
+#page-wrapper {
+  padding: 20px !important;
+  background: #FFFFFF;
+}
+
 #header {
   display: block !important;
   background: transparent;
@@ -23,8 +28,14 @@
 
 #banner {
   background-position: left !important;
-  background-size: cover;
-  min-height: 100vh !important;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+#banner .content {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 @media screen and (max-width: 736px) {
@@ -42,12 +53,8 @@
   }
 }
 
-#page-wrapper {
-  padding-top: 0 !important;
-}
-
 #banner:after {
-  opacity: 0.7;
+  opacity: 0;
 }
 
 #banner .content {
@@ -61,6 +68,33 @@
 
 #banner .content header p {
   font-size: 2em;
+}
+
+.spotlight {
+  box-shadow: none;
+}
+
+.spotlight.style1 .content {
+  border-color: #FFFFFF;
+}
+
+.wrapper.style1 {
+  background: #2c3e50;
+}
+
+#signup {
+  background: #FFFFFF;
+  color: #2c3e50;
+}
+
+#signup h2,
+#signup header p,
+#signup #email {
+  color: #2c3e50;
+}
+
+#signup #email {
+  border-color: #2c3e50;
 }
 
 #nav {

@@ -2,6 +2,7 @@
 	{% set banner_data = page.header.banner %}
 <!-- Banner -->
 	<section id="{{ id }}" style="background-image: url('{{ url('theme://images/' ~ (banner_data.background_image ?: 'banner.jpg') ) }}')">
+	{# <section id="{{ id }}"> #}
 		<div class="content">
 			<header>
 				<h2>{{ banner_data.headline }}</h2>

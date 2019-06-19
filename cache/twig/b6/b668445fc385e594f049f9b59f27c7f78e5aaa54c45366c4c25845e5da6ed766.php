@@ -39,27 +39,29 @@ class __TwigTemplate_8ef0a40c2413477ec97623149f2bba312dd41244ae976a6c9759e530cb6
             echo "\" style=\"background-image: url('";
             echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc(("theme://images/" . (($this->getAttribute(($context["banner_data"] ?? null), "background_image", [])) ? ($this->getAttribute(($context["banner_data"] ?? null), "background_image", [])) : ("banner.jpg"))));
             echo "')\">
-\t\t<div class=\"content\">
+\t";
+            // line 6
+            echo "\t\t<div class=\"content\">
 \t\t\t<header>
 \t\t\t\t<h2>";
-            // line 7
+            // line 8
             echo $this->getAttribute(($context["banner_data"] ?? null), "headline", []);
             echo "</h2>
 \t\t\t\t";
-            // line 8
+            // line 9
             if ($this->getAttribute(($context["banner_data"] ?? null), "quips", [])) {
-                // line 9
+                // line 10
                 echo "\t\t\t\t\t<p>";
                 echo twig_join_filter($this->getAttribute(($context["banner_data"] ?? null), "quips", []), "<br/>");
                 echo "</p>
 \t\t\t\t";
             }
-            // line 11
+            // line 12
             echo "\t\t\t</header>
 \t\t\t";
-            // line 12
+            // line 13
             if ($this->getAttribute(($context["banner_data"] ?? null), "hero_image", [])) {
-                // line 13
+                // line 14
                 echo "\t\t\t\t<span class=\"image\"><img src=\"";
                 echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc(("theme://images/" . (($this->getAttribute(($context["banner_data"] ?? null), "hero_image", [])) ? ($this->getAttribute(($context["banner_data"] ?? null), "hero_image", [])) : ("pic01.jpg"))));
                 echo "\" alt=\"";
@@ -67,22 +69,22 @@ class __TwigTemplate_8ef0a40c2413477ec97623149f2bba312dd41244ae976a6c9759e530cb6
                 echo "\" /></span>
 \t\t\t";
             }
-            // line 15
+            // line 16
             echo "\t\t</div>
 \t";
-            // line 16
+            // line 17
             if (($context["next_id"] ?? null)) {
-                // line 17
+                // line 18
                 echo "\t\t<a href=\"#";
                 echo ($context["next_id"] ?? null);
                 echo "\" class=\"goto-next scrolly\">Next</a>
 \t";
             }
-            // line 19
+            // line 20
             echo "\t</section>
 ";
         } else {
-            // line 21
+            // line 22
             echo "\t";
             echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->dump($this->env, $context, "Notice: homepage banner section not rendered because page header \"banner\" is absent in frontmatter.");
             echo "
@@ -102,7 +104,7 @@ class __TwigTemplate_8ef0a40c2413477ec97623149f2bba312dd41244ae976a6c9759e530cb6
 
     public function getDebugInfo()
     {
-        return array (  86 => 21,  82 => 19,  76 => 17,  74 => 16,  71 => 15,  63 => 13,  61 => 12,  58 => 11,  52 => 9,  50 => 8,  46 => 7,  38 => 4,  35 => 3,  32 => 2,  30 => 1,);
+        return array (  88 => 22,  84 => 20,  78 => 18,  76 => 17,  73 => 16,  65 => 14,  63 => 13,  60 => 12,  54 => 10,  52 => 9,  48 => 8,  44 => 6,  38 => 4,  35 => 3,  32 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -119,6 +121,7 @@ class __TwigTemplate_8ef0a40c2413477ec97623149f2bba312dd41244ae976a6c9759e530cb6
 \t{% set banner_data = page.header.banner %}
 <!-- Banner -->
 \t<section id=\"{{ id }}\" style=\"background-image: url('{{ url('theme://images/' ~ (banner_data.background_image ?: 'banner.jpg') ) }}')\">
+\t{# <section id=\"{{ id }}\"> #}
 \t\t<div class=\"content\">
 \t\t\t<header>
 \t\t\t\t<h2>{{ banner_data.headline }}</h2>

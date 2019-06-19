@@ -36,7 +36,7 @@ class __TwigTemplate_04014013dfec48a816bd99b6cd2171e35133c1c6e9d7c746e02ab131829
 \t<section id=\"";
             // line 4
             echo ($context["id"] ?? null);
-            echo "\" class=\"wrapper style2 special fade\">
+            echo "\" class=\"wrapper special fade\">
 \t\t<div class=\"container\">
 \t\t\t<header>
 \t\t\t\t<h2>";
@@ -103,7 +103,7 @@ class __TwigTemplate_04014013dfec48a816bd99b6cd2171e35133c1c6e9d7c746e02ab131829
         return new Source("{% if page.header.signup %}
 \t{% set signup_data = page.header.signup %}
 <!-- \"Five\" -->
-\t<section id=\"{{ id }}\" class=\"wrapper style2 special fade\">
+\t<section id=\"{{ id }}\" class=\"wrapper special fade\">
 \t\t<div class=\"container\">
 \t\t\t<header>
 \t\t\t\t<h2>{{ signup_data.headline }}</h2>
