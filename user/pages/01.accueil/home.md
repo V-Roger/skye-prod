@@ -5,7 +5,7 @@ banner:
     headline: 'Skye prod'
     background_image: spirale.png
     quips:
-        - 'donne voix à vos projets'
+        - 'GUIDAGE SONORE'
 intro:
     headline: 'Quentin donne de la voix'
     hero_image: micro3.jpg
