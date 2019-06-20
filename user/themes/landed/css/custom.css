@@ -23,7 +23,7 @@
 }
 
 *, *:before, *:after {
-  font-family: Less, sans-serif !important;
+  font-family: 'Roboto condensed', sans-serif !important;
   font-weight: 300;
 }
 
@@ -71,6 +71,7 @@
 }
 
 #banner .content p {
+  font-family: Less !important;
   letter-spacing: 0.15em;
   font-weight: normal;
   margin: 0 !important;
@@ -134,22 +135,22 @@
 }
 
 .wrapper.style1 {
-  background: #2c3e50;
+  background: #000;
 }
 
 #signup {
   background: #FFFFFF;
-  color: #2c3e50;
+  color: #000;
 }
 
 #signup h2,
 #signup header p,
 #signup #email {
-  color: #2c3e50;
+  color: #000;
 }
 
 #signup #email {
-  border-color: #2c3e50;
+  border-color: #000;
 }
 
 #nav {
