@@ -28,8 +28,14 @@
 }
 
 #page-wrapper {
-  padding: 20px !important;
-  background: #FFFFFF;
+  padding: 15px !important;
+  background: #FCFCFC;
+}
+
+@media screen and (max-width: 800px) {
+  #page-wrapper {
+    padding: 10px !important;
+  }
 }
 
 #header {
@@ -79,7 +85,7 @@
 
 @media screen and (max-width: 736px) {
   #banner {
-    background-position: top left !important;
+    background-position: -5px -5px !important;
     background-size: 75vh;
   }
 
