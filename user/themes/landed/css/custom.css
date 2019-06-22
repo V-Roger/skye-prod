@@ -106,6 +106,10 @@
   #banner .content p {
     display: none;
   }
+
+  .spotlight .content {
+    border-top-width: 10px !important;
+  }
 }
 
 #banner:after {
@@ -137,7 +141,19 @@
 }
 
 .spotlight.style1 .content {
-  border-color: #FFFFFF;
+  border-color: #FCFCFC;
+}
+
+.spotlight.bottom .content {
+  border-top-width: 15px;
+}
+
+.spotlight.right .content {
+  border-left-width: 15px;
+}
+
+.spotlight.left .content {
+  border-right-width: 15px;
 }
 
 .wrapper.style1 {
@@ -291,8 +307,8 @@ body {
 ========================================= */
 .menu-icon {
   position: absolute;
-  top: 64px;
-  left: 64px;
+  top: 45px;
+  left: 45px;
   -webkit-transform: translate(-50%, -50%) scale(0.6);
   -moz-transform: translate(-50%, -50%) scale(0.6);
   -ms-transform: translate(-50%, -50%) scale(0.6);
