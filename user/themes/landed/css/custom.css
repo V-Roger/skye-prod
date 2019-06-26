@@ -120,10 +120,6 @@ body.nav #banner .content {
   #banner .content p {
     display: none;
   }
-
-  .spotlight .content {
-    border-top-width: 10px !important;
-  }
 }
 
 #banner:after {
@@ -163,7 +159,7 @@ body.nav #banner .content {
 }
 
 .spotlight.style1 .content {
-  border-color: #FCFCFC;
+  border-width: 0 !important;
 }
 
 .spotlight.right .content {
@@ -221,6 +217,11 @@ body.nav #banner .content {
 @media all and (max-width: 800px) {
   #nav ul {
     align-content: flex-start;
+  }
+
+  #nav {
+    width: 100vw;
+    left: 0;
   }
 }
 
@@ -326,7 +327,7 @@ body {
 .menu-icon {
   position: absolute;
   top: 45px;
-  right: 45px;
+  right: 0;
   -webkit-transform: translate(-50%, -50%) scale(0.6);
   -moz-transform: translate(-50%, -50%) scale(0.6);
   -ms-transform: translate(-50%, -50%) scale(0.6);

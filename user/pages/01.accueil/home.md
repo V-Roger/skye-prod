@@ -7,7 +7,7 @@ banner:
     quips:
         - 'CREATION SONORE'
 intro:
-    headline: 'DES REALISATIONS SONORES POUR TOUS VOS PROJETS :'
+    headline: 'DES REALISATIONS SONORES POUR TOUS VOS PROJETS'
     hero_image: DSC03865site.jpg
 features:
     items:

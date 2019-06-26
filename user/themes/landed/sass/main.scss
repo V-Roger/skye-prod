@@ -1766,7 +1766,7 @@
 				.content {
 					background-color: _palette(bg);
 					border-width: 0 !important;
-					border-top-width: 0.35em !important;
+					// border-top-width: 0.35em !important;
 					bottom: auto !important;
 					left: auto !important;
 					padding: $size-wrapper-pad-tb $size-wrapper-pad-lr ($size-wrapper-pad-tb - _size(element-margin)) $size-wrapper-pad-lr !important;
@@ -1914,7 +1914,7 @@
 				}
 
 				.content {
-					border-top-width: 0.2em !important;
+					// border-top-width: 0.2em !important;
 					padding: $size-wrapper-pad-tb $size-wrapper-pad-lr ($size-wrapper-pad-tb - _size(element-margin)) $size-wrapper-pad-lr !important;
 				}
 			}
