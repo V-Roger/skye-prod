@@ -7,7 +7,6 @@ taxonomy:
         - feature
 spotlight:
     headline: 'Radio'
-    image: images/micro4.jpg
     blurb: "Créé par Apple en 2005, le podcast touche aujourd'hui plus de 39% des Français grâce à sa flexibilité. Skye Prod vous propose de créer vos podcasts, jingles, audios brandings, thèmes musicaux, pour que vous puissiez communiquer différemment sur votre entreprise, tout en gagnant en notoriété."
     button:
         text: 'En savoir plus'

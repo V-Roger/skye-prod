@@ -50,12 +50,12 @@
             <header id="header">
                 {# <h1 id="logo">
                     <a href="{{ base_url == '' ? '/' : base_url }}">
-                        <img src="{{ url('theme://images/spirale.png') }}" alt="{{ site.title }}" />
+                        <img src="{{ url('theme://images/logo.png') }}" alt="{{ site.title }}" />
                     </a>
                 </h1> #}
 
                 {% block header_navigation %}
-                    <div class="menu-icon" onclick="$(this).toggleClass('clicked')">
+                    <div class="menu-icon" onclick="$(body).toggleClass('nav'); $(this).toggleClass('clicked');">
                         <div class="dot"></div>
                         <div class="dot"></div>
                         <div class="dot"></div>

@@ -1163,7 +1163,7 @@
 
 		.content {
 			@include vendor('transform', 'translate(0,0)');
-			@include vendor('transition', 'transform 1s ease, opacity 1s ease');
+			@include vendor('transition', 'transform 250ms ease, opacity 250ms ease');
 			background: _palette(bg-transparent);
 			border-style: solid;
 			opacity: 1;
@@ -1177,6 +1177,19 @@
 			opacity: 1;
 		}
 
+		&.full {
+			.content {
+				background: #000;
+				height: 100vh;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				padding: 20vh 20vw;
+				transition: 0s;
+			}
+		}
+
 		&.top, &.bottom {
 			.content {
 				left: 0;
@@ -1187,14 +1200,14 @@
 
 		&.top {
 			.content {
-				border-bottom-width: 0.35em;
+				// border-bottom-width: 0.35em;
 				top: 0;
 			}
 		}
 
 		&.bottom {
 			.content {
-				border-top-width: 0.35em;
+				// border-top-width: 0.35em;
 				bottom: 0;
 			}
 		}
@@ -1210,14 +1223,14 @@
 
 		&.left {
 			.content {
-				border-right-width: 0.35em;
+				// border-right-width: 0.35em;
 				left: 0;
 			}
 		}
 
 		&.right {
 			.content {
-				border-left-width: 0.35em;
+				// border-left-width: 0.35em;
 				right: 0;
 			}
 		}

@@ -32,7 +32,7 @@ class __TwigTemplate_3aacf9e64d17d7a9b361e76a4cb19b3d16caf3dd10f7b5c0332786df2e8
         echo " -->
 \t";
         // line 2
-        $context["extra_classes"] = (((($context["placing"] ?? null) % 2 == 0)) ? ("style1 left") : ("style1 right"));
+        $context["extra_classes"] = (((($context["placing"] ?? null) % 2 == 1)) ? ("full") : ((((0 == ($context["placing"] ?? null) % 4)) ? ("style1 left") : ("style1 right"))));
         // line 3
         echo "\t";
         $context["feature_data"] = $this->getAttribute($this->getAttribute(($context["f"] ?? null), "header", []), "spotlight", []);
@@ -124,7 +124,7 @@ class __TwigTemplate_3aacf9e64d17d7a9b361e76a4cb19b3d16caf3dd10f7b5c0332786df2e8
     public function getSourceContext()
     {
         return new Source("<!-- {{ f.slug }} -->
-\t{% set extra_classes = placing is even ? 'style1 left' : 'style1 right' %}
+\t{% set extra_classes = placing is odd ? 'full' : (placing is divisible by(4) ? 'style1 left' : 'style1 right') %}
 \t{% set feature_data = f.header.spotlight %}
 \t<section id=\"{{ f.slug }}\" class=\"spotlight {{ extra_classes }}\">
 \t\t{% if feature_data.image %}

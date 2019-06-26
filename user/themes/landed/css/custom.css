@@ -28,13 +28,14 @@
 }
 
 #page-wrapper {
-  padding: 15px !important;
+  /* padding: 15px !important; */
+  padding: 0 !important;
   background: #FCFCFC;
 }
 
 @media screen and (max-width: 800px) {
   #page-wrapper {
-    padding: 10px !important;
+    /* padding: 10px !important; */
   }
 }
 
@@ -46,22 +47,35 @@
 }
 
 #logo {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  bottom: -20px !important;
   margin-top: 32px !important;
   margin-left: 12px !important;
   z-index: 200;
 }
 
 #logo img {
-  max-height: 160px;
+  max-height: 80px;
   max-width: 80%;
 }
 
 #banner {
-  background-position: left !important;
+  background-position: center left !important;
   background-repeat: no-repeat;
   background-size: 70%;
   background-color: #000;
   box-shadow: none;
+  transition: background-position 200ms ease-in, background-size 180ms ease-in 20ms;
+}
+
+body.nav #banner {
+  background-position: -40vw -30vh !important;
+  background-size: 100%;
+}
+
+body.nav #banner .content {
+  display: none;
 }
 
 #banner .content {
@@ -136,24 +150,28 @@
   font-size: 2em;
 }
 
+#intro header {
+  padding-bottom: 10vh;
+}
+
 .spotlight {
   box-shadow: none;
+}
+
+.spotlight h2 {
+  text-transform: uppercase;
 }
 
 .spotlight.style1 .content {
   border-color: #FCFCFC;
 }
 
-.spotlight.bottom .content {
-  border-top-width: 15px;
-}
-
 .spotlight.right .content {
-  border-left-width: 15px;
+  width: 50vw;
 }
 
 .spotlight.left .content {
-  border-right-width: 15px;
+  width: 50vw;
 }
 
 .wrapper.style1 {
@@ -177,28 +195,27 @@
 
 #nav {
   position: fixed;
-  width: 100vw;
+  width: 50vw;
   height: 0;
   top: 0;
-  left: 0;
+  left: 50vw;
   bottom: 0;
   right: 0;
-  background: black;
   z-index: 99;
   opacity: 0;
-  transition: all 100ms ease-in;
+  display: none;
 }
 
-#nav ul {
+#nav > ul {
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
   height: 100%;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
   justify-items: center;
-  padding: 0;
+  padding: 15vh 0 0 0;
 }
 
 @media all and (max-width: 800px) {
@@ -209,9 +226,10 @@
 
 #nav ul li {
   position: relative;
-  text-align: center;
-  font-size: 48pt;
+  text-align: left;
+  font-size: 40pt;
   line-height: 80px;
+  text-transform: uppercase;
   z-index: 1;
   margin: 0 !important;
   padding: 0 !important;
@@ -251,7 +269,7 @@
 #nav ul li .children-trigger + ul {
   display: none;
   position: absolute;
-  left: 65%;
+  left: 15%;
 }
 
 #nav ul li .children-trigger + ul li {
@@ -308,7 +326,7 @@ body {
 .menu-icon {
   position: absolute;
   top: 45px;
-  left: 45px;
+  right: 45px;
   -webkit-transform: translate(-50%, -50%) scale(0.6);
   -moz-transform: translate(-50%, -50%) scale(0.6);
   -ms-transform: translate(-50%, -50%) scale(0.6);
@@ -401,6 +419,6 @@ body {
 }
 .menu-icon.clicked + #nav {
   opacity: 1;
+  display: block;
   height: 100vh;
 }
-

@@ -46,7 +46,7 @@ class __TwigTemplate_0868a387186eb34d109ace21437cc61add3f699a791ea4f8f67c87c53c4
 \t\t<div class=\"content\">
 \t\t\t<div class=\"container\">
 \t\t\t\t<div class=\"row\">
-\t\t\t\t\t<div class=\"col-4 col-12-medium\">
+\t\t\t\t\t<div class=\"col-12 col-12-medium\">
 \t\t\t\t\t\t<header>
 \t\t\t\t\t\t";
             // line 11
@@ -151,7 +151,7 @@ class __TwigTemplate_0868a387186eb34d109ace21437cc61add3f699a791ea4f8f67c87c53c4
 \t\t<div class=\"content\">
 \t\t\t<div class=\"container\">
 \t\t\t\t<div class=\"row\">
-\t\t\t\t\t<div class=\"col-4 col-12-medium\">
+\t\t\t\t\t<div class=\"col-12 col-12-medium\">
 \t\t\t\t\t\t<header>
 \t\t\t\t\t\t{% if intro_data.headline %}
 \t\t\t\t\t\t\t<h2>{{ intro_data.headline }}</h2>

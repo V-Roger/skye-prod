@@ -223,7 +223,7 @@ class __TwigTemplate_4231ac1d72f1cc8d4465a1de402437379fcbae0e0d813341bb10a44a3f4
     public function block_header_navigation($context, array $blocks = [])
     {
         // line 58
-        echo "                    <div class=\"menu-icon\" onclick=\"\$(this).toggleClass('clicked')\">
+        echo "                    <div class=\"menu-icon\" onclick=\"\$(body).toggleClass('nav'); \$(this).toggleClass('clicked');\">
                         <div class=\"dot\"></div>
                         <div class=\"dot\"></div>
                         <div class=\"dot\"></div>
@@ -418,12 +418,12 @@ class __TwigTemplate_4231ac1d72f1cc8d4465a1de402437379fcbae0e0d813341bb10a44a3f4
             <header id=\"header\">
                 {# <h1 id=\"logo\">
                     <a href=\"{{ base_url == '' ? '/' : base_url }}\">
-                        <img src=\"{{ url('theme://images/spirale.png') }}\" alt=\"{{ site.title }}\" />
+                        <img src=\"{{ url('theme://images/logo.png') }}\" alt=\"{{ site.title }}\" />
                     </a>
                 </h1> #}
 
                 {% block header_navigation %}
-                    <div class=\"menu-icon\" onclick=\"\$(this).toggleClass('clicked')\">
+                    <div class=\"menu-icon\" onclick=\"\$(body).toggleClass('nav'); \$(this).toggleClass('clicked');\">
                         <div class=\"dot\"></div>
                         <div class=\"dot\"></div>
                         <div class=\"dot\"></div>
