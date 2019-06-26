@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/skye-prod/system/config/security.yaml',
-    'modified' => 1560790003,
+    'modified' => 1561375572,
     'data' => [
         'xss_whitelist' => [
             0 => 'admin.super'

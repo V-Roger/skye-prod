@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/skye-prod/user/plugins/form/languages.yaml',
-    'modified' => 1560790476,
+    'modified' => 1561375621,
     'data' => [
         'en' => [
             'PLUGIN_FORM' => [

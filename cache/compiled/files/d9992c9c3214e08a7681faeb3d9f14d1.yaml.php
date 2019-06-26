@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/skye-prod/user/plugins/form/form.yaml',
-    'modified' => 1560790476,
+    'modified' => 1561375621,
     'data' => [
         'enabled' => true,
         'built_in_css' => true,

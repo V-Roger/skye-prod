@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/skye-prod/user/plugins/admin/blueprints.yaml',
-    'modified' => 1560790479,
+    'modified' => 1561375624,
     'data' => [
         'name' => 'Admin Panel',
-        'version' => '1.9.6',
+        'version' => '1.9.7',
         'testing' => false,
         'description' => 'Adds an advanced administration panel to manage your site',
         'icon' => 'empire',
