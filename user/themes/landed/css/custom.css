@@ -99,7 +99,14 @@ body.nav #banner .content {
 
 @media screen and (max-width: 736px) {
   #banner {
-    background-position: -5px -5px !important;
+    background-position: -40vw 15px !important;
+    background-size: 75vh;
+    min-height: 100vh;
+  }
+
+  
+  body.nav #banner {
+    background-position: -40vw 15px !important;
     background-size: 75vh;
   }
 
