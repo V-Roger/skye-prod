@@ -46,6 +46,21 @@
   border: none;
 }
 
+@media all and (max-width: 736px) {
+  #header {
+    background: #000;
+    height: 6em;
+  }
+
+  #logo img {
+    max-height: 40px !important;
+  }
+
+  #main {
+    padding-top: 8em !important;
+  }
+}
+
 #logo {
   position: -webkit-sticky !important;
   position: sticky !important;
