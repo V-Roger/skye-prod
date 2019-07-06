@@ -172,6 +172,6 @@ class __TwigTemplate_3e4d32e6b1cc1fdb083e6c386093b683f7841f692b97b194acdba66c309
 \t</section>
 \t{% if not loop.last %}<hr />{% endif %}
 {% endfor %}
-</section>", "partials/components/portals_sidebar.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\themes\\landed\\templates\\partials\\components\\portals_sidebar.html.twig");
+</section>", "partials/components/portals_sidebar.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\themes\\landed\\templates\\partials\\components\\portals_sidebar.html.twig");
     }
 }

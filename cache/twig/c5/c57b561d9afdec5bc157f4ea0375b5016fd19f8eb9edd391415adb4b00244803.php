@@ -59,7 +59,7 @@ class __TwigTemplate_7c19a2d2601a1758ee6c2d40b1308ce75c90dc24b8ca015711f96f5fe94
             $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["key_points_data"] ?? null), "items", []));
             foreach ($context['_seq'] as $context["_key"] => $context["point"]) {
                 // line 16
-                echo "\t\t\t\t\t<section class=\"col-3 col-6-medium col-12-xsmall keypoint\">
+                echo "\t\t\t\t\t<section class=\"col-3 col-6-medium col-6-xsmall keypoint\">
 \t\t\t\t\t\t";
                 // line 17
                 if ($this->getAttribute($context["point"], "target", [])) {
@@ -171,7 +171,7 @@ class __TwigTemplate_7c19a2d2601a1758ee6c2d40b1308ce75c90dc24b8ca015711f96f5fe94
 \t\t\t\t<div class=\"row gtr-uniform\">
 \t\t\t\t<!-- FIXME: let's assume strictly 6 items for now -->
 \t\t\t\t{% for point in key_points_data.items %}
-\t\t\t\t\t<section class=\"col-3 col-6-medium col-12-xsmall keypoint\">
+\t\t\t\t\t<section class=\"col-3 col-6-medium col-6-xsmall keypoint\">
 \t\t\t\t\t\t{% if point.target %}
 \t\t\t\t\t\t\t<a href=\"{{ point.target }}\">
 \t\t\t\t\t\t{% endif %}

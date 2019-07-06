@@ -96,6 +96,6 @@ class __TwigTemplate_7b840e19abfbbade03026a195c186bb174ce059c4c5070c1e20c22a74e4
 \t\t\t{{ parent() }}
 \t\t</div>
 \t</div>
-{% endblock content %}", "left-sidebar.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\themes\\landed\\templates\\left-sidebar.html.twig");
+{% endblock content %}", "left-sidebar.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\themes\\landed\\templates\\left-sidebar.html.twig");
     }
 }

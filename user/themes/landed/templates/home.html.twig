@@ -4,14 +4,15 @@
 {% set intro_section_id = 'intro' %}
 {% set key_points_section_id = 'points' %}
 
+{% set featured_pages = page.collection('features') %}
+{% set first_feature = featured_pages|first %}
+
+
 {% block banner %}
-	{% include 'partials/sections/banner.html.twig' with { id: 'banner', next_id: intro_section_id } %}
+	{% include 'partials/sections/banner.html.twig' with { id: 'banner', next_id: first_feature.slug } %}
 {% endblock banner %}
 
 {% block body %}
-
-    {% set featured_pages = page.collection('features') %}
-    {% set first_feature = featured_pages|first %}
 
     {% set next_section_id = windows_section_id %} {# set this to null if there are no more spotlights in this home template #}
     {% for feature in featured_pages %}
@@ -22,7 +23,5 @@
     {% include 'partials/sections/key_points.html.twig' with { id: key_points_section_id } %}
 
 	{% include 'partials/sections/intro.html.twig' with { id: intro_section_id, next_id: (first_feature ? first_feature.slug) } %}
-
-    {% include 'partials/sections/signup.html.twig' with { id: 'signup' } %}
 
 {% endblock body %}

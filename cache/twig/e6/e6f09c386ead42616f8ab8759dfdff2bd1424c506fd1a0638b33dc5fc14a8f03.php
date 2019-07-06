@@ -36,37 +36,33 @@ class __TwigTemplate_efc123ce1cdb545445011053bbfba6eda03134e71eea23d5c5f0a281b38
         $context["intro_section_id"] = "intro";
         // line 5
         $context["key_points_section_id"] = "points";
+        // line 7
+        $context["featured_pages"] = $this->getAttribute(($context["page"] ?? null), "collection", [0 => "features"], "method");
+        // line 8
+        $context["first_feature"] = twig_first($this->env, ($context["featured_pages"] ?? null));
         // line 1
         $this->parent = $this->loadTemplate("partials/base.html.twig", "home.html.twig", 1);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 7
+    // line 11
     public function block_banner($context, array $blocks = [])
     {
-        // line 8
+        // line 12
         echo "\t";
-        $this->loadTemplate("partials/sections/banner.html.twig", "home.html.twig", 8)->display(twig_array_merge($context, ["id" => "banner", "next_id" => ($context["intro_section_id"] ?? null)]));
+        $this->loadTemplate("partials/sections/banner.html.twig", "home.html.twig", 12)->display(twig_array_merge($context, ["id" => "banner", "next_id" => $this->getAttribute(($context["first_feature"] ?? null), "slug", [])]));
     }
 
-    // line 11
+    // line 15
     public function block_body($context, array $blocks = [])
     {
-        // line 12
-        echo "
-    ";
-        // line 13
-        $context["featured_pages"] = $this->getAttribute(($context["page"] ?? null), "collection", [0 => "features"], "method");
-        // line 14
-        echo "    ";
-        $context["first_feature"] = twig_first($this->env, ($context["featured_pages"] ?? null));
-        // line 15
-        echo "
-    ";
         // line 16
+        echo "
+    ";
+        // line 17
         $context["next_section_id"] = ($context["windows_section_id"] ?? null);
         echo " ";
-        // line 17
+        // line 18
         echo "    ";
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["featured_pages"] ?? null));
@@ -84,13 +80,13 @@ class __TwigTemplate_efc123ce1cdb545445011053bbfba6eda03134e71eea23d5c5f0a281b38
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["feature"]) {
-            // line 18
-            echo "        ";
-            $context["next_feature"] = $this->getAttribute(($context["featured_pages"] ?? null), "nth", [0 => ($this->getAttribute($context["loop"], "index0", []) + 1)], "method");
             // line 19
             echo "        ";
-            $this->loadTemplate("partials/sections/feature.html.twig", "home.html.twig", 19)->display(twig_array_merge($context, ["f" => $context["feature"], "placing" => $this->getAttribute($context["loop"], "index", []), "next_id" => (($this->getAttribute($context["loop"], "last", [])) ? (($context["next_section_id"] ?? null)) : ($this->getAttribute(($context["next_feature"] ?? null), "slug", [])))]));
+            $context["next_feature"] = $this->getAttribute(($context["featured_pages"] ?? null), "nth", [0 => ($this->getAttribute($context["loop"], "index0", []) + 1)], "method");
             // line 20
+            echo "        ";
+            $this->loadTemplate("partials/sections/feature.html.twig", "home.html.twig", 20)->display(twig_array_merge($context, ["f" => $context["feature"], "placing" => $this->getAttribute($context["loop"], "index", []), "next_id" => (($this->getAttribute($context["loop"], "last", [])) ? (($context["next_section_id"] ?? null)) : ($this->getAttribute(($context["next_feature"] ?? null), "slug", [])))]));
+            // line 21
             echo "    ";
             ++$context['loop']['index0'];
             ++$context['loop']['index'];
@@ -104,22 +100,17 @@ class __TwigTemplate_efc123ce1cdb545445011053bbfba6eda03134e71eea23d5c5f0a281b38
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['feature'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 21
+        // line 22
         echo "
     ";
-        // line 22
-        $this->loadTemplate("partials/sections/key_points.html.twig", "home.html.twig", 22)->display(twig_array_merge($context, ["id" => ($context["key_points_section_id"] ?? null)]));
         // line 23
+        $this->loadTemplate("partials/sections/key_points.html.twig", "home.html.twig", 23)->display(twig_array_merge($context, ["id" => ($context["key_points_section_id"] ?? null)]));
+        // line 24
         echo "
 \t";
-        // line 24
-        $this->loadTemplate("partials/sections/intro.html.twig", "home.html.twig", 24)->display(twig_array_merge($context, ["id" => ($context["intro_section_id"] ?? null), "next_id" => ((($context["first_feature"] ?? null)) ? ($this->getAttribute(($context["first_feature"] ?? null), "slug", [])) : (""))]));
         // line 25
-        echo "
-    ";
+        $this->loadTemplate("partials/sections/intro.html.twig", "home.html.twig", 25)->display(twig_array_merge($context, ["id" => ($context["intro_section_id"] ?? null), "next_id" => ((($context["first_feature"] ?? null)) ? ($this->getAttribute(($context["first_feature"] ?? null), "slug", [])) : (""))]));
         // line 26
-        $this->loadTemplate("partials/sections/signup.html.twig", "home.html.twig", 26)->display(twig_array_merge($context, ["id" => "signup"]));
-        // line 27
         echo "
 ";
     }
@@ -136,7 +127,7 @@ class __TwigTemplate_efc123ce1cdb545445011053bbfba6eda03134e71eea23d5c5f0a281b38
 
     public function getDebugInfo()
     {
-        return array (  123 => 27,  121 => 26,  118 => 25,  116 => 24,  113 => 23,  111 => 22,  108 => 21,  94 => 20,  91 => 19,  88 => 18,  70 => 17,  67 => 16,  64 => 15,  61 => 14,  59 => 13,  56 => 12,  53 => 11,  48 => 8,  45 => 7,  40 => 1,  38 => 5,  36 => 4,  30 => 1,);
+        return array (  114 => 26,  112 => 25,  109 => 24,  107 => 23,  104 => 22,  90 => 21,  87 => 20,  84 => 19,  66 => 18,  63 => 17,  60 => 16,  57 => 15,  52 => 12,  49 => 11,  44 => 1,  42 => 8,  40 => 7,  38 => 5,  36 => 4,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -155,14 +146,15 @@ class __TwigTemplate_efc123ce1cdb545445011053bbfba6eda03134e71eea23d5c5f0a281b38
 {% set intro_section_id = 'intro' %}
 {% set key_points_section_id = 'points' %}
 
+{% set featured_pages = page.collection('features') %}
+{% set first_feature = featured_pages|first %}
+
+
 {% block banner %}
-\t{% include 'partials/sections/banner.html.twig' with { id: 'banner', next_id: intro_section_id } %}
+\t{% include 'partials/sections/banner.html.twig' with { id: 'banner', next_id: first_feature.slug } %}
 {% endblock banner %}
 
 {% block body %}
-
-    {% set featured_pages = page.collection('features') %}
-    {% set first_feature = featured_pages|first %}
 
     {% set next_section_id = windows_section_id %} {# set this to null if there are no more spotlights in this home template #}
     {% for feature in featured_pages %}
@@ -173,8 +165,6 @@ class __TwigTemplate_efc123ce1cdb545445011053bbfba6eda03134e71eea23d5c5f0a281b38
     {% include 'partials/sections/key_points.html.twig' with { id: key_points_section_id } %}
 
 \t{% include 'partials/sections/intro.html.twig' with { id: intro_section_id, next_id: (first_feature ? first_feature.slug) } %}
-
-    {% include 'partials/sections/signup.html.twig' with { id: 'signup' } %}
 
 {% endblock body %}", "home.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\themes\\landed\\templates\\home.html.twig");
     }
