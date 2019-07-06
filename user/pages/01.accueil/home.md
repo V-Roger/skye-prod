@@ -1,5 +1,5 @@
 ---
-title: Accueil
+title: Accueil.
 visible: true
 banner:
     headline: 'Skye prod'
@@ -21,5 +21,18 @@ signup:
         target: 'mailto:roger.virgil@gmail.com'
         placeholder: 'Adresse email'
         button_text: 'C''est parti'
----
 
+key_points:
+    headline: 'Ils nous ont fait confiance'
+    items:
+        - image: scanair@2x.png
+          # target: '#'
+        - image: Readiktion@2x.png
+          # target: '#'
+        - image: trevouxsite@2x.png
+          # target: '#'
+        - image: overdrive@2x.png
+          # target: '#'
+        - image: Nutrakk@2x.png
+          # target: '#'
+---

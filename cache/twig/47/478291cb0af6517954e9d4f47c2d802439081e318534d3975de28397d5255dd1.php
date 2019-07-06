@@ -119,6 +119,6 @@ class __TwigTemplate_04014013dfec48a816bd99b6cd2171e35133c1c6e9d7c746e02ab131829
 \t</section>
 {% else %}
 \t{{ dump('Notice: homepage signup section not rendered because page header \"signup\" is absent in frontmatter.') }}
-{% endif %}", "partials/sections/signup.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\themes\\landed\\templates\\partials\\sections\\signup.html.twig");
+{% endif %}", "partials/sections/signup.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\themes\\landed\\templates\\partials\\sections\\signup.html.twig");
     }
 }

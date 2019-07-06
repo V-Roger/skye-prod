@@ -79,6 +79,6 @@ class __TwigTemplate_57d3346f331f116c644c3867317d8040ddd38df8b3f9d4ed6b4f3450916
 \t\t\t<li>© {{ 'now'|date('Y') }}, {{ config.site.author.name }}. {{ site.metadata.rights|default('All rights reserved.') }}</li>
 \t\t</ul>
 \t</footer>
-", "partials/footer.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\themes\\landed\\templates\\partials\\footer.html.twig");
+", "partials/footer.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\themes\\landed\\templates\\partials\\footer.html.twig");
     }
 }

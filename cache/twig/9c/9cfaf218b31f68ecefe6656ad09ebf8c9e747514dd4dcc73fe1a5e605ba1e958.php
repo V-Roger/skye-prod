@@ -410,6 +410,6 @@ class __TwigTemplate_e2c22c06bebfa5374957eccecf82c844683804c5247103915f10894a164
         </div>
     </nav>
 {% endif %}
-", "partials/nav.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav.html.twig");
+", "partials/nav.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav.html.twig");
     }
 }

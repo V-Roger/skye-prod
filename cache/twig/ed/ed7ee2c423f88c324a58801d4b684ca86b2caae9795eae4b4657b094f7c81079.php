@@ -372,6 +372,6 @@ class __TwigTemplate_0613bc8e0773c6f8e5d21ab0a78b92649a0b55afaecb5b3733ce58014b3
         {% endif %}
     </div>
 {% endblock %}
-", "plugins.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\plugins.html.twig");
+", "plugins.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\plugins.html.twig");
     }
 }

@@ -292,6 +292,6 @@ class __TwigTemplate_f8bfe16c0fd00cfdb53439e7ae9c6328e385dd3bb07aa7286b098c15784
     {% endif %}
 
 </table>
-", "partials/plugin-data.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\plugin-data.html.twig");
+", "partials/plugin-data.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\plugin-data.html.twig");
     }
 }

@@ -237,7 +237,7 @@ class __TwigTemplate_19501b79595691247e237f027847948e7f24f32f2e316ea78cbaa7dcfef
         <div class=\"tabs-content\">
             ";
                 // line 54
-                $this->loadTemplate("forms/fields/tabs/tabs.html.twig", "forms/fields/tabs/tabs.html.twig", 54, "38413796")->display(twig_array_merge($context, ["name" => $this->getAttribute(($context["field"] ?? null), "name", []), "fields" => $this->getAttribute(($context["field"] ?? null), "fields", [])]));
+                $this->loadTemplate("forms/fields/tabs/tabs.html.twig", "forms/fields/tabs/tabs.html.twig", 54, "2056514800")->display(twig_array_merge($context, ["name" => $this->getAttribute(($context["field"] ?? null), "name", []), "fields" => $this->getAttribute(($context["field"] ?? null), "fields", [])]));
                 // line 62
                 echo "        </div>
     ";
@@ -339,13 +339,13 @@ class __TwigTemplate_19501b79595691247e237f027847948e7f24f32f2e316ea78cbaa7dcfef
 {% endif %}
 </div>
 {% endblock %}
-", "forms/fields/tabs/tabs.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\form\\templates\\forms\\fields\\tabs\\tabs.html.twig");
+", "forms/fields/tabs/tabs.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\form\\templates\\forms\\fields\\tabs\\tabs.html.twig");
     }
 }
 
 
 /* forms/fields/tabs/tabs.html.twig */
-class __TwigTemplate_19501b79595691247e237f027847948e7f24f32f2e316ea78cbaa7dcfef88ad2___38413796 extends \Twig\Template
+class __TwigTemplate_19501b79595691247e237f027847948e7f24f32f2e316ea78cbaa7dcfef88ad2___2056514800 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -480,6 +480,6 @@ class __TwigTemplate_19501b79595691247e237f027847948e7f24f32f2e316ea78cbaa7dcfef
 {% endif %}
 </div>
 {% endblock %}
-", "forms/fields/tabs/tabs.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\form\\templates\\forms\\fields\\tabs\\tabs.html.twig");
+", "forms/fields/tabs/tabs.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\form\\templates\\forms\\fields\\tabs\\tabs.html.twig");
     }
 }

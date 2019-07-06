@@ -603,6 +603,6 @@ class __TwigTemplate_a7bcddf2475b00bcbcf3c47357363ebc8255ea05852f89b8e0c1e21aeeb
     {% endblock body %}
     </html>
 {% endif %}
-", "partials/base-root.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\base-root.html.twig");
+", "partials/base-root.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\base-root.html.twig");
     }
 }

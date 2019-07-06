@@ -178,6 +178,6 @@ class __TwigTemplate_0868a387186eb34d109ace21437cc61add3f699a791ea4f8f67c87c53c4
 \t</section>
 {% else %}
 \t{{ dump('Notice: homepage intro section not rendered because page header \"intro\" is absent in frontmatter.') }}
-{% endif %}", "partials/sections/intro.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\themes\\landed\\templates\\partials\\sections\\intro.html.twig");
+{% endif %}", "partials/sections/intro.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\themes\\landed\\templates\\partials\\sections\\intro.html.twig");
     }
 }

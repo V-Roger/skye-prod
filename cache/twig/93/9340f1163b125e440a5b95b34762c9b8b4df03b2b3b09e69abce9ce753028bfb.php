@@ -359,6 +359,6 @@ class __TwigTemplate_78ae432d1e201bda4d9ae48a72f2feeefde0906ae36c53c4892d4180762
 
 {% include 'partials/modal-add-package.html.twig' with { type: 'plugin' } %}
 {% include 'partials/modal-update-packages.html.twig' with { type: 'plugin' } %}
-", "partials/plugins-list.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\plugins-list.html.twig");
+", "partials/plugins-list.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\plugins-list.html.twig");
     }
 }

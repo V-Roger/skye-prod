@@ -59,7 +59,7 @@ class __TwigTemplate_7c19a2d2601a1758ee6c2d40b1308ce75c90dc24b8ca015711f96f5fe94
             $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["key_points_data"] ?? null), "items", []));
             foreach ($context['_seq'] as $context["_key"] => $context["point"]) {
                 // line 16
-                echo "\t\t\t\t\t<section class=\"col-4 col-6-medium col-12-xsmall\">
+                echo "\t\t\t\t\t<section class=\"col-3 col-6-medium col-12-xsmall keypoint\">
 \t\t\t\t\t\t";
                 // line 17
                 if ($this->getAttribute($context["point"], "target", [])) {
@@ -70,12 +70,14 @@ class __TwigTemplate_7c19a2d2601a1758ee6c2d40b1308ce75c90dc24b8ca015711f96f5fe94
 \t\t\t\t\t\t";
                 }
                 // line 20
-                echo "\t\t\t\t\t\t<span class=\"icon alt major fa-";
-                echo $this->getAttribute($context["point"], "icon", []);
-                echo "\"></span>
+                echo "\t\t\t\t\t\t<img src=\"";
+                echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc(("theme://images/" . $this->getAttribute($context["point"], "image", [])));
+                echo "\" alt=\"";
+                echo $this->getAttribute($context["point"], "heading", []);
+                echo "\">
 \t\t\t\t\t\t<h3>";
                 // line 21
-                echo $this->getAttribute(($context["pont"] ?? null), "heading", []);
+                echo $this->getAttribute($context["point"], "heading", []);
                 echo "</h3>
 \t\t\t\t\t\t";
                 // line 22
@@ -141,7 +143,7 @@ class __TwigTemplate_7c19a2d2601a1758ee6c2d40b1308ce75c90dc24b8ca015711f96f5fe94
 
     public function getDebugInfo()
     {
-        return array (  125 => 43,  118 => 38,  109 => 34,  105 => 32,  103 => 31,  98 => 28,  88 => 25,  84 => 23,  82 => 22,  78 => 21,  73 => 20,  67 => 18,  65 => 17,  62 => 16,  58 => 15,  49 => 9,  45 => 8,  38 => 4,  35 => 3,  32 => 2,  30 => 1,);
+        return array (  127 => 43,  120 => 38,  111 => 34,  107 => 32,  105 => 31,  100 => 28,  90 => 25,  86 => 23,  84 => 22,  80 => 21,  73 => 20,  67 => 18,  65 => 17,  62 => 16,  58 => 15,  49 => 9,  45 => 8,  38 => 4,  35 => 3,  32 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -169,12 +171,12 @@ class __TwigTemplate_7c19a2d2601a1758ee6c2d40b1308ce75c90dc24b8ca015711f96f5fe94
 \t\t\t\t<div class=\"row gtr-uniform\">
 \t\t\t\t<!-- FIXME: let's assume strictly 6 items for now -->
 \t\t\t\t{% for point in key_points_data.items %}
-\t\t\t\t\t<section class=\"col-4 col-6-medium col-12-xsmall\">
+\t\t\t\t\t<section class=\"col-3 col-6-medium col-12-xsmall keypoint\">
 \t\t\t\t\t\t{% if point.target %}
 \t\t\t\t\t\t\t<a href=\"{{ point.target }}\">
 \t\t\t\t\t\t{% endif %}
-\t\t\t\t\t\t<span class=\"icon alt major fa-{{ point.icon }}\"></span>
-\t\t\t\t\t\t<h3>{{ pont.heading }}</h3>
+\t\t\t\t\t\t<img src=\"{{ url('theme://images/' ~ point.image) }}\" alt=\"{{ point.heading }}\">
+\t\t\t\t\t\t<h3>{{ point.heading }}</h3>
 \t\t\t\t\t\t{% if point.target %}
 \t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t{% endif %}
@@ -197,6 +199,6 @@ class __TwigTemplate_7c19a2d2601a1758ee6c2d40b1308ce75c90dc24b8ca015711f96f5fe94
 
 {% else %}
 \t{{ dump('Notice: homepage key points section not rendered because page header \"key_points\" is absent in frontmatter.') }}
-{% endif %}", "partials/sections/key_points.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\themes\\landed\\templates\\partials\\sections\\key_points.html.twig");
+{% endif %}", "partials/sections/key_points.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\themes\\landed\\templates\\partials\\sections\\key_points.html.twig");
     }
 }

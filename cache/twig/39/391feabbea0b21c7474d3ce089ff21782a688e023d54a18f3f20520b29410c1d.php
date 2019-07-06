@@ -146,6 +146,6 @@ class __TwigTemplate_3aacf9e64d17d7a9b361e76a4cb19b3d16caf3dd10f7b5c0332786df2e8
 \t\t{% if next_id %}
 \t\t\t<a href=\"#{{ next_id }}\" class=\"goto-next scrolly\">Next</a>
 \t\t{% endif %}
-\t</section>", "partials/sections/feature.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\themes\\landed\\templates\\partials\\sections\\feature.html.twig");
+\t</section>", "partials/sections/feature.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\themes\\landed\\templates\\partials\\sections\\feature.html.twig");
     }
 }

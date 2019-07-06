@@ -62,6 +62,6 @@ class __TwigTemplate_a5db882935879a95db17978e1890e1342cc290fac0c533922e1c2121723
     {
         return new Source("{% set user_avatar = admin.user.getAvatarUrl() %}
 <img src=\"{{ '?' not in user_avatar ? user_avatar ~ '?s=80' : user_avatar }}\" />
-", "partials/nav-user-avatar.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-user-avatar.html.twig");
+", "partials/nav-user-avatar.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-user-avatar.html.twig");
     }
 }

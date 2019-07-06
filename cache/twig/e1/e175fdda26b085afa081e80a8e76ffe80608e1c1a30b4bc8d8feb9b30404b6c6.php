@@ -48,6 +48,6 @@ class __TwigTemplate_cbb2ce06c2f25657919f5956a25705685f1c7bf7a781f21c4fe6aa8480b
 
     public function getSourceContext()
     {
-        return new Source("", "empty.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\empty.html.twig");
+        return new Source("", "empty.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\empty.html.twig");
     }
 }

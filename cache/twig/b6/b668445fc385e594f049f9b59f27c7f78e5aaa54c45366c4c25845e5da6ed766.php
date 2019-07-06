@@ -139,6 +139,6 @@ class __TwigTemplate_8ef0a40c2413477ec97623149f2bba312dd41244ae976a6c9759e530cb6
 \t</section>
 {% else %}
 \t{{ dump('Notice: homepage banner section not rendered because page header \"banner\" is absent in frontmatter.') }}
-{% endif %}", "partials/sections/banner.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\themes\\landed\\templates\\partials\\sections\\banner.html.twig");
+{% endif %}", "partials/sections/banner.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\themes\\landed\\templates\\partials\\sections\\banner.html.twig");
     }
 }

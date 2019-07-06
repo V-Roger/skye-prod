@@ -73,6 +73,6 @@ class __TwigTemplate_14413a45aa3e16705c055d67a16e23e546349033f7f48f9d1f29280fc4e
 {% if xss_status is not empty %}
     <div class=\"notice alert\">{{ \"PLUGIN_ADMIN.XSS_ISSUE\"|tu([xss_status])|raw }}</div>
 {% endif %}
-", "forms/fields/xss/xss.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\xss\\xss.html.twig");
+", "forms/fields/xss/xss.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\xss\\xss.html.twig");
     }
 }

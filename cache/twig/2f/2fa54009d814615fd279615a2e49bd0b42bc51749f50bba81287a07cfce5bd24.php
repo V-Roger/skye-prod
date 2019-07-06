@@ -1653,6 +1653,6 @@ $context["p"], "published", [])) ? (($this->env->getExtension('Grav\Plugin\Admin
         \$('.admin-pages .form-tabs .tabs-nav').css('margin-right', (\$('#admin-topbar').width() + 20) + 'px');
     </script>
 {% endblock %}
-", "pages.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\pages.html.twig");
+", "pages.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\pages.html.twig");
     }
 }

@@ -60,6 +60,6 @@ class __TwigTemplate_f8b6b694ea460d93844c5e31c60768c2e1ce4ac2f19420028ebfb45293b
     public function getSourceContext()
     {
         return new Source("{% extends 'partials/base-root.html.twig' %}
-", "partials/base.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\base.html.twig");
+", "partials/base.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\base.html.twig");
     }
 }

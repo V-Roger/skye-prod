@@ -151,7 +151,12 @@ class __TwigTemplate_79eaeefd24a897a6da3f8de1292b5507fb8a88a7421d0a5e716d29ec6a8
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['mitem'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 66
-        echo "</ul>
+        echo "    <li onclick=\"\$('.menu-icon').removeClass('clicked');\">
+        <a href=\"#signup\">
+            Contact.
+        </a>
+    </li>
+</ul>
 
 ";
     }
@@ -255,7 +260,7 @@ class __TwigTemplate_79eaeefd24a897a6da3f8de1292b5507fb8a88a7421d0a5e716d29ec6a8
 
     public function getDebugInfo()
     {
-        return array (  228 => 23,  221 => 19,  215 => 18,  210 => 17,  203 => 13,  194 => 7,  188 => 6,  183 => 5,  180 => 4,  177 => 3,  172 => 2,  160 => 1,  154 => 66,  144 => 62,  138 => 61,  135 => 60,  130 => 59,  127 => 58,  121 => 57,  114 => 53,  108 => 52,  103 => 51,  98 => 48,  88 => 44,  82 => 43,  77 => 42,  73 => 41,  64 => 35,  58 => 34,  53 => 33,  50 => 32,  47 => 31,  42 => 30,  36 => 28,  34 => 27,  30 => 25,);
+        return array (  233 => 23,  226 => 19,  220 => 18,  215 => 17,  208 => 13,  199 => 7,  193 => 6,  188 => 5,  185 => 4,  182 => 3,  177 => 2,  165 => 1,  154 => 66,  144 => 62,  138 => 61,  135 => 60,  130 => 59,  127 => 58,  121 => 57,  114 => 53,  108 => 52,  103 => 51,  98 => 48,  88 => 44,  82 => 43,  77 => 42,  73 => 41,  64 => 35,  58 => 34,  53 => 33,  50 => 32,  47 => 31,  42 => 30,  36 => 28,  34 => 27,  30 => 25,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -333,8 +338,13 @@ class __TwigTemplate_79eaeefd24a897a6da3f8de1292b5507fb8a88a7421d0a5e716d29ec6a8
             </a>
         </li>
     {% endfor %}
+    <li onclick=\"\$('.menu-icon').removeClass('clicked');\">
+        <a href=\"#signup\">
+            Contact.
+        </a>
+    </li>
 </ul>
 
-", "partials/navigation.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\themes\\landed\\templates\\partials\\navigation.html.twig");
+", "partials/navigation.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\themes\\landed\\templates\\partials\\navigation.html.twig");
     }
 }

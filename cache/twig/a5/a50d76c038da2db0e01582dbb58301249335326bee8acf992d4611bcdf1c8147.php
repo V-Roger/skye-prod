@@ -88,6 +88,6 @@ class __TwigTemplate_a03313e9371d51805a422f32fe0b36ce4cfe0105a4e4f084fe8150f1ac8
 \t\t<li><a href=\"{{ link.target }}\"{% if link.icon %} class=\"icon fa-{{ link.icon }}\"{% endif %}><span class=\"label\">{{ link.text }}</span></a></li>
 \t{% endfor %}
 </ul>
-", "partials/components/social_linkgroup.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\themes\\landed\\templates\\partials\\components\\social_linkgroup.html.twig");
+", "partials/components/social_linkgroup.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\themes\\landed\\templates\\partials\\components\\social_linkgroup.html.twig");
     }
 }

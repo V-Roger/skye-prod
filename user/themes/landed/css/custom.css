@@ -86,7 +86,7 @@ body.nav #banner .content {
 }
 
 #banner .content h2 {
-  font-size: 6em !important;
+  font-size: 5em !important;
   font-family: Senda !important;
 }
 
@@ -143,11 +143,12 @@ body.nav #banner .content {
 }
 
 #banner .content header p {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 #intro header {
   padding-bottom: 10vh;
+  text-align: center;
 }
 
 .spotlight {
@@ -191,27 +192,28 @@ body.nav #banner .content {
 
 #nav {
   position: fixed;
-  width: 50vw;
+  width: 30vw;
   height: 0;
   top: 0;
-  left: 50vw;
+  left: 70vw;
   bottom: 0;
   right: 0;
   z-index: 99;
   opacity: 0;
   display: none;
+  background: #000;
+  padding-left: 1em;
+  overflow: auto;
 }
 
 #nav > ul {
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-  justify-items: center;
-  padding: 15vh 0 0 0;
+  align-items: flex-start;
+  padding: 10vh 0 0 0;
 }
 
 @media all and (max-width: 800px) {
@@ -239,8 +241,8 @@ body.nav #banner .content {
 #nav ul li:after {
   content: '';
   display: block;
-  position: relative;
-  bottom: 36px;
+  position: absolute;
+  top: 36px;
   border-radius: 2px;
   width: 0px;
   left: -200px;
@@ -269,8 +271,9 @@ body.nav #banner .content {
 
 #nav ul li .children-trigger + ul {
   display: none;
-  position: absolute;
-  left: 15%;
+  position: relative;
+  left: 0;
+  padding-left: 0;
 }
 
 #nav ul li .children-trigger + ul li {
@@ -278,7 +281,8 @@ body.nav #banner .content {
   width: 500px;
   text-align: left;
   font-size: 32px;
-  line-height: 0;
+  line-height: 32px;
+  max-width: calc(100vw - 2em);
 }
 
 #nav ul li .children-trigger.active + ul {
@@ -286,7 +290,7 @@ body.nav #banner .content {
 }
 
 #nav ul li .children-trigger + ul li:after {
-  bottom: 0px;
+  top: 16px;
 } 
 
 #nav ul li .children-trigger + ul li:hover:after,
@@ -303,6 +307,10 @@ body.nav #banner .content {
 .content img {
   max-width: 18em;
   max-height: 18em;
+}
+
+.keypoint img {
+  max-width: 100%;
 }
 
 /* https://codepen.io/BeanBaag/pen/oexJzE */

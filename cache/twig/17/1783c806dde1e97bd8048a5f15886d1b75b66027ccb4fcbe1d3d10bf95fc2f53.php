@@ -283,6 +283,6 @@ class __TwigTemplate_bc4e55036b0b6221c8a4b5f21915aa6325be189c989a69d3eb659423830
         </div>
 
     </form>
-</div>", "partials/modal-update-packages.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\modal-update-packages.html.twig");
+</div>", "partials/modal-update-packages.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\modal-update-packages.html.twig");
     }
 }

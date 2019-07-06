@@ -95,6 +95,6 @@ class __TwigTemplate_152c2f174daec30524bb7d6c938be036a6ba21808856f37f4673f848a8d
 </div>
 
 
-", "partials/page-legend.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\page-legend.html.twig");
+", "partials/page-legend.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\page-legend.html.twig");
     }
 }

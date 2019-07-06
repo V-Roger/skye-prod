@@ -13,12 +13,12 @@
 				<div class="row gtr-uniform">
 				<!-- FIXME: let's assume strictly 6 items for now -->
 				{% for point in key_points_data.items %}
-					<section class="col-4 col-6-medium col-12-xsmall">
+					<section class="col-3 col-6-medium col-12-xsmall keypoint">
 						{% if point.target %}
 							<a href="{{ point.target }}">
 						{% endif %}
-						<span class="icon alt major fa-{{ point.icon }}"></span>
-						<h3>{{ pont.heading }}</h3>
+						<img src="{{ url('theme://images/' ~ point.image) }}" alt="{{ point.heading }}">
+						<h3>{{ point.heading }}</h3>
 						{% if point.target %}
 							</a>
 						{% endif %}

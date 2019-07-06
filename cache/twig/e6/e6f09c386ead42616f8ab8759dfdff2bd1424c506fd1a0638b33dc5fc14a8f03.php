@@ -62,16 +62,11 @@ class __TwigTemplate_efc123ce1cdb545445011053bbfba6eda03134e71eea23d5c5f0a281b38
         $context["first_feature"] = twig_first($this->env, ($context["featured_pages"] ?? null));
         // line 15
         echo "
-\t";
-        // line 16
-        $this->loadTemplate("partials/sections/intro.html.twig", "home.html.twig", 16)->display(twig_array_merge($context, ["id" => ($context["intro_section_id"] ?? null), "next_id" => ((($context["first_feature"] ?? null)) ? ($this->getAttribute(($context["first_feature"] ?? null), "slug", [])) : (""))]));
-        // line 17
-        echo "
     ";
-        // line 18
+        // line 16
         $context["next_section_id"] = ($context["windows_section_id"] ?? null);
         echo " ";
-        // line 19
+        // line 17
         echo "    ";
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["featured_pages"] ?? null));
@@ -89,13 +84,13 @@ class __TwigTemplate_efc123ce1cdb545445011053bbfba6eda03134e71eea23d5c5f0a281b38
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["feature"]) {
-            // line 20
+            // line 18
             echo "        ";
             $context["next_feature"] = $this->getAttribute(($context["featured_pages"] ?? null), "nth", [0 => ($this->getAttribute($context["loop"], "index0", []) + 1)], "method");
-            // line 21
+            // line 19
             echo "        ";
-            $this->loadTemplate("partials/sections/feature.html.twig", "home.html.twig", 21)->display(twig_array_merge($context, ["f" => $context["feature"], "placing" => $this->getAttribute($context["loop"], "index", []), "next_id" => (($this->getAttribute($context["loop"], "last", [])) ? (($context["next_section_id"] ?? null)) : ($this->getAttribute(($context["next_feature"] ?? null), "slug", [])))]));
-            // line 22
+            $this->loadTemplate("partials/sections/feature.html.twig", "home.html.twig", 19)->display(twig_array_merge($context, ["f" => $context["feature"], "placing" => $this->getAttribute($context["loop"], "index", []), "next_id" => (($this->getAttribute($context["loop"], "last", [])) ? (($context["next_section_id"] ?? null)) : ($this->getAttribute(($context["next_feature"] ?? null), "slug", [])))]));
+            // line 20
             echo "    ";
             ++$context['loop']['index0'];
             ++$context['loop']['index'];
@@ -109,15 +104,22 @@ class __TwigTemplate_efc123ce1cdb545445011053bbfba6eda03134e71eea23d5c5f0a281b38
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['feature'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 23
+        // line 21
         echo "
     ";
+        // line 22
+        $this->loadTemplate("partials/sections/key_points.html.twig", "home.html.twig", 22)->display(twig_array_merge($context, ["id" => ($context["key_points_section_id"] ?? null)]));
+        // line 23
+        echo "
+\t";
         // line 24
-        $this->loadTemplate("partials/sections/key_points.html.twig", "home.html.twig", 24)->display(twig_array_merge($context, ["id" => ($context["key_points_section_id"] ?? null)]));
+        $this->loadTemplate("partials/sections/intro.html.twig", "home.html.twig", 24)->display(twig_array_merge($context, ["id" => ($context["intro_section_id"] ?? null), "next_id" => ((($context["first_feature"] ?? null)) ? ($this->getAttribute(($context["first_feature"] ?? null), "slug", [])) : (""))]));
         // line 25
-        echo "    ";
-        $this->loadTemplate("partials/sections/signup.html.twig", "home.html.twig", 25)->display(twig_array_merge($context, ["id" => "signup"]));
+        echo "
+    ";
         // line 26
+        $this->loadTemplate("partials/sections/signup.html.twig", "home.html.twig", 26)->display(twig_array_merge($context, ["id" => "signup"]));
+        // line 27
         echo "
 ";
     }
@@ -134,7 +136,7 @@ class __TwigTemplate_efc123ce1cdb545445011053bbfba6eda03134e71eea23d5c5f0a281b38
 
     public function getDebugInfo()
     {
-        return array (  121 => 26,  118 => 25,  116 => 24,  113 => 23,  99 => 22,  96 => 21,  93 => 20,  75 => 19,  72 => 18,  69 => 17,  67 => 16,  64 => 15,  61 => 14,  59 => 13,  56 => 12,  53 => 11,  48 => 8,  45 => 7,  40 => 1,  38 => 5,  36 => 4,  30 => 1,);
+        return array (  123 => 27,  121 => 26,  118 => 25,  116 => 24,  113 => 23,  111 => 22,  108 => 21,  94 => 20,  91 => 19,  88 => 18,  70 => 17,  67 => 16,  64 => 15,  61 => 14,  59 => 13,  56 => 12,  53 => 11,  48 => 8,  45 => 7,  40 => 1,  38 => 5,  36 => 4,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -162,8 +164,6 @@ class __TwigTemplate_efc123ce1cdb545445011053bbfba6eda03134e71eea23d5c5f0a281b38
     {% set featured_pages = page.collection('features') %}
     {% set first_feature = featured_pages|first %}
 
-\t{% include 'partials/sections/intro.html.twig' with { id: intro_section_id, next_id: (first_feature ? first_feature.slug) } %}
-
     {% set next_section_id = windows_section_id %} {# set this to null if there are no more spotlights in this home template #}
     {% for feature in featured_pages %}
         {% set next_feature = featured_pages.nth(loop.index0 + 1) %}
@@ -171,8 +171,11 @@ class __TwigTemplate_efc123ce1cdb545445011053bbfba6eda03134e71eea23d5c5f0a281b38
     {% endfor %}
 
     {% include 'partials/sections/key_points.html.twig' with { id: key_points_section_id } %}
+
+\t{% include 'partials/sections/intro.html.twig' with { id: intro_section_id, next_id: (first_feature ? first_feature.slug) } %}
+
     {% include 'partials/sections/signup.html.twig' with { id: 'signup' } %}
 
-{% endblock body %}", "home.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\themes\\landed\\templates\\home.html.twig");
+{% endblock body %}", "home.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\themes\\landed\\templates\\home.html.twig");
     }
 }

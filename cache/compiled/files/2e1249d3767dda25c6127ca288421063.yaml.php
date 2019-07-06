@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'themes://landed/landed.yaml',
-    'modified' => 1559133270,
+    'modified' => 1562174900,
     'data' => [
         'enabled' => true,
         'dropdown' => [

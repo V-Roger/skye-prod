@@ -283,6 +283,6 @@ class __TwigTemplate_35b5147b188ee26d5b1fdcb71002ffd7e14192dfdcf4781b4cb654c2d8c
         </div>
 
     </form>
-</div>", "partials/modal-add-package.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\modal-add-package.html.twig");
+</div>", "partials/modal-add-package.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\modal-add-package.html.twig");
     }
 }

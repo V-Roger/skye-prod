@@ -152,6 +152,6 @@ class __TwigTemplate_d0b94594a01ff7c14790c7381f1c06db7eb46d9017580bf837637f027e3
     {{ nonce_field('admin-form', 'admin-nonce')|raw }}
 
 </form>
-", "partials/blueprints-new.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\blueprints-new.html.twig");
+", "partials/blueprints-new.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\blueprints-new.html.twig");
     }
 }

@@ -116,6 +116,6 @@ class __TwigTemplate_847f0acf48685dfa81979e56865ae1ef81deb56ea381a0720738aa4aa15
         </div>
     </a>
 </div>
-", "partials/nav-user-details.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-user-details.html.twig");
+", "partials/nav-user-details.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-user-details.html.twig");
     }
 }

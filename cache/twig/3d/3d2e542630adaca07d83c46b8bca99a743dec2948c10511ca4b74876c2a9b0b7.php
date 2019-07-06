@@ -209,6 +209,6 @@ class __TwigTemplate_7349716b277bddc3d90761ba87fbd20f02bf5e5b553f1e85c4bcf38bcc4
     {% endif %}
 </ul>
 
-", "partials/nav-quick-tray.html.twig", "C:\\xampp\\htdocs\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-quick-tray.html.twig");
+", "partials/nav-quick-tray.html.twig", "C:\\Users\\Virgil\\Documents\\perso\\code\\skye-prod\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-quick-tray.html.twig");
     }
 }
