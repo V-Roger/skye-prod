@@ -48,8 +48,11 @@
 
 @media all and (max-width: 736px) {
   #header {
-    background: #000;
     height: 6em;
+  }
+
+  #header:not(.home) {
+    background: #000;
   }
 
   #logo img {
