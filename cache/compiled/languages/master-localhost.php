@@ -1,391 +1,391 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1562421367,
-    'checksum' => '01dd0c1651877276cebc9e902bad8469',
+    'timestamp' => 1562777695,
+    'checksum' => '5dd65a6807bd5625531d5099cc91f027',
     'files' => [
         'system/languages' => [
             'ar' => [
                 'file' => 'system/languages/ar.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'bg' => [
                 'file' => 'system/languages/bg.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'ca' => [
                 'file' => 'system/languages/ca.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'cs' => [
                 'file' => 'system/languages/cs.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'da' => [
                 'file' => 'system/languages/da.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'de' => [
                 'file' => 'system/languages/de.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'el' => [
                 'file' => 'system/languages/el.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'en' => [
                 'file' => 'system/languages/en.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'es' => [
                 'file' => 'system/languages/es.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'et' => [
                 'file' => 'system/languages/et.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'eu' => [
                 'file' => 'system/languages/eu.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'fa' => [
                 'file' => 'system/languages/fa.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'fi' => [
                 'file' => 'system/languages/fi.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'fr' => [
                 'file' => 'system/languages/fr.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'he' => [
                 'file' => 'system/languages/he.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'hr' => [
                 'file' => 'system/languages/hr.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'hu' => [
                 'file' => 'system/languages/hu.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'id' => [
                 'file' => 'system/languages/id.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'is' => [
                 'file' => 'system/languages/is.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'it' => [
                 'file' => 'system/languages/it.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'ja' => [
                 'file' => 'system/languages/ja.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'ko' => [
                 'file' => 'system/languages/ko.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'lt' => [
                 'file' => 'system/languages/lt.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'nb' => [
                 'file' => 'system/languages/nb.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'nl' => [
                 'file' => 'system/languages/nl.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'no' => [
                 'file' => 'system/languages/no.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'pl' => [
                 'file' => 'system/languages/pl.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'pt' => [
                 'file' => 'system/languages/pt.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'ro' => [
                 'file' => 'system/languages/ro.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'ru' => [
                 'file' => 'system/languages/ru.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'sk' => [
                 'file' => 'system/languages/sk.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'sl' => [
                 'file' => 'system/languages/sl.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'sv' => [
                 'file' => 'system/languages/sv.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'th' => [
                 'file' => 'system/languages/th.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'tr' => [
                 'file' => 'system/languages/tr.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'uk' => [
                 'file' => 'system/languages/uk.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'vi' => [
                 'file' => 'system/languages/vi.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'zh' => [
                 'file' => 'system/languages/zh.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'zh-tw' => [
                 'file' => 'system/languages/zh-tw.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ]
         ],
         'user/plugins' => [
-            'plugins/email' => [
-                'file' => 'user/plugins/email/languages.yaml',
-                'modified' => 1562174898
-            ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/languages.yaml',
-                'modified' => 1562174899
+                'modified' => 1562776865
             ],
-            'plugins/form' => [
-                'file' => 'user/plugins/form/languages.yaml',
-                'modified' => 1562421365
+            'plugins/email' => [
+                'file' => 'user/plugins/email/languages.yaml',
+                'modified' => 1562776865
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/languages.yaml',
-                'modified' => 1562174900
+                'modified' => 1562776865
+            ],
+            'plugins/form' => [
+                'file' => 'user/plugins/form/languages.yaml',
+                'modified' => 1562776865
             ]
         ],
         'user/plugins/admin/languages' => [
             'ar' => [
                 'file' => 'user/plugins/admin/languages/ar.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'bg' => [
                 'file' => 'user/plugins/admin/languages/bg.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'br' => [
                 'file' => 'user/plugins/admin/languages/br.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'ca' => [
                 'file' => 'user/plugins/admin/languages/ca.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'cs' => [
                 'file' => 'user/plugins/admin/languages/cs.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'cy' => [
                 'file' => 'user/plugins/admin/languages/cy.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'da' => [
                 'file' => 'user/plugins/admin/languages/da.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'de' => [
                 'file' => 'user/plugins/admin/languages/de.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'el' => [
                 'file' => 'user/plugins/admin/languages/el.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'en' => [
                 'file' => 'user/plugins/admin/languages/en.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'es' => [
                 'file' => 'user/plugins/admin/languages/es.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'et' => [
                 'file' => 'user/plugins/admin/languages/et.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'eu' => [
                 'file' => 'user/plugins/admin/languages/eu.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'fa' => [
                 'file' => 'user/plugins/admin/languages/fa.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'fi' => [
                 'file' => 'user/plugins/admin/languages/fi.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'fr' => [
                 'file' => 'user/plugins/admin/languages/fr.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'he' => [
                 'file' => 'user/plugins/admin/languages/he.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'hr' => [
                 'file' => 'user/plugins/admin/languages/hr.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'hu' => [
                 'file' => 'user/plugins/admin/languages/hu.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'id' => [
                 'file' => 'user/plugins/admin/languages/id.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'it' => [
                 'file' => 'user/plugins/admin/languages/it.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'ja' => [
                 'file' => 'user/plugins/admin/languages/ja.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'ko' => [
                 'file' => 'user/plugins/admin/languages/ko.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'lt' => [
                 'file' => 'user/plugins/admin/languages/lt.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'nl' => [
                 'file' => 'user/plugins/admin/languages/nl.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'no' => [
                 'file' => 'user/plugins/admin/languages/no.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'pl' => [
                 'file' => 'user/plugins/admin/languages/pl.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'pt' => [
                 'file' => 'user/plugins/admin/languages/pt.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'ro' => [
                 'file' => 'user/plugins/admin/languages/ro.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'ru' => [
                 'file' => 'user/plugins/admin/languages/ru.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'sk' => [
                 'file' => 'user/plugins/admin/languages/sk.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'sl' => [
                 'file' => 'user/plugins/admin/languages/sl.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'sr' => [
                 'file' => 'user/plugins/admin/languages/sr.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'sv' => [
                 'file' => 'user/plugins/admin/languages/sv.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'th' => [
                 'file' => 'user/plugins/admin/languages/th.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'tlh' => [
                 'file' => 'user/plugins/admin/languages/tlh.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'tr' => [
                 'file' => 'user/plugins/admin/languages/tr.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'uk' => [
                 'file' => 'user/plugins/admin/languages/uk.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'vi' => [
                 'file' => 'user/plugins/admin/languages/vi.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'zh' => [
                 'file' => 'user/plugins/admin/languages/zh.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'zh-tw' => [
                 'file' => 'user/plugins/admin/languages/zh-tw.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ]
         ],
         'user/plugins/login/languages' => [
             'de' => [
                 'file' => 'user/plugins/login/languages/de.yaml',
-                'modified' => 1562421357
+                'modified' => 1562776865
             ],
             'en' => [
                 'file' => 'user/plugins/login/languages/en.yaml',
-                'modified' => 1562421357
+                'modified' => 1562776865
             ],
             'es' => [
                 'file' => 'user/plugins/login/languages/es.yaml',
-                'modified' => 1562421357
+                'modified' => 1562776865
             ],
             'fr' => [
                 'file' => 'user/plugins/login/languages/fr.yaml',
-                'modified' => 1562421357
+                'modified' => 1562776865
             ],
             'hr' => [
                 'file' => 'user/plugins/login/languages/hr.yaml',
-                'modified' => 1562421358
+                'modified' => 1562776865
             ],
             'hu' => [
                 'file' => 'user/plugins/login/languages/hu.yaml',
-                'modified' => 1562421358
+                'modified' => 1562776865
             ],
             'no' => [
                 'file' => 'user/plugins/login/languages/no.yaml',
-                'modified' => 1562421358
+                'modified' => 1562776865
             ],
             'ro' => [
                 'file' => 'user/plugins/login/languages/ro.yaml',
-                'modified' => 1562421358
+                'modified' => 1562776865
             ],
             'ru' => [
                 'file' => 'user/plugins/login/languages/ru.yaml',
-                'modified' => 1562421358
+                'modified' => 1562776865
             ],
             'uk' => [
                 'file' => 'user/plugins/login/languages/uk.yaml',
-                'modified' => 1562421358
+                'modified' => 1562776865
             ]
         ]
     ],
@@ -1291,14 +1291,14 @@ Sie haben **2FA** für dieses Konto aktiviert. Bitte benutzen Sie Ihre **2FA** A
                 'COMMAND' => 'Befehl',
                 'EXTRA_ARGUMENTS' => 'Zusätzliche Argumente'
             ],
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Fehler',
+                'ERROR_MESSAGE' => 'Uuups. Sieht aus als ob diese Seite nicht existiert.'
+            ],
             'PLUGIN_EMAIL' => [
                 'EMAIL_NOT_CONFIGURED' => 'E-Mail ist nicht konfiguriert',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Bitte konfigurieren sie eine \'An\' (\'to\') Adresse in den Email-Plugin-Einstellungen oder im Formular.',
                 'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Bitte konfigurieren sie eine \'Von\' (\'from\') Adresse in den Email-Plugin-Einstellungen oder im Formular.'
-            ],
-            'PLUGIN_ERROR' => [
-                'ERROR' => 'Fehler',
-                'ERROR_MESSAGE' => 'Uuups. Sieht aus als ob diese Seite nicht existiert.'
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Formularwerte nicht gültig. Für ein oder mehrere erforderliche Felder fehlen Werte.',
@@ -2481,6 +2481,11 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'DEBUGGER_DEBUGBAR' => 'PHP Debug Bar',
                 'DEBUGGER_CLOCKWORK' => 'Clockwork Browser Extension'
             ],
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Error',
+                'ERROR_MESSAGE' => 'Woops. Looks like this page doesn\'t exist.',
+                'ROUTE_404' => '404 Route'
+            ],
             'PLUGIN_EMAIL' => [
                 'MAIL_ENGINE' => 'Mail Engine',
                 'MAIL_ENGINE_DISABLED' => 'Disabled',
@@ -2537,10 +2542,9 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'QUEUE_FLUSH_TIME_LIMIT' => 'Flush time limit',
                 'QUEUE_FLUSH_TIME_LIMIT_APPEND' => 'Seconds'
             ],
-            'PLUGIN_ERROR' => [
-                'ERROR' => 'Error',
-                'ERROR_MESSAGE' => 'Woops. Looks like this page doesn\'t exist.',
-                'ROUTE_404' => '404 Route'
+            'PLUGIN_PROBLEMS' => [
+                'BUILTIN_CSS' => 'Use built in CSS',
+                'BUILTIN_CSS_HELP' => 'Include the CSS provided by the Problems plugin'
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Form not validated. One or more required fields are missing.',
@@ -2606,10 +2610,6 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'DESTINATION_NOT_SPECIFIED' => 'Destination not specified',
                 'INVALID_MIME_TYPE' => 'The MIME type %s for the file %s is not an accepted.',
                 'INVALID_FILE_EXTENSION' => 'The File Extension for the file %s is not an accepted.'
-            ],
-            'PLUGIN_PROBLEMS' => [
-                'BUILTIN_CSS' => 'Use built in CSS',
-                'BUILTIN_CSS_HELP' => 'Include the CSS provided by the Problems plugin'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -4743,16 +4743,16 @@ L\'**authentification à deux facteurs** est activée sur ce compte. Veuillez ut
                 'COMMAND' => 'Commande',
                 'EXTRA_ARGUMENTS' => 'Arguments supplémentaires'
             ],
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Erreur',
+                'ERROR_MESSAGE' => 'Oups. Il semble que cette page n’existe pas.'
+            ],
             'PLUGIN_EMAIL' => [
                 'EMAIL_NOT_CONFIGURED' => 'L’e-mail n’est pas configuré',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Veuillez configurer une adresse de \'destinataire\' dans les paramètres du Plugin ou dans le formulaire.',
                 'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Veuillez configurer une adresse \'d\'expéditeur\' dans les paramètres du Plugin ou dans le formulaire.',
                 'TEST_EMAIL_BODY' => '<h1>E-mail de test</h1><p>Cet e-mail de test est basé sur la configuration suivante :</p>  <p><pre>%1$s</pre></p>',
                 'EMAIL_FOOTER' => 'GetGrav.org'
-            ],
-            'PLUGIN_ERROR' => [
-                'ERROR' => 'Erreur',
-                'ERROR_MESSAGE' => 'Oups. Il semble que cette page n’existe pas.'
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Formulaire non validé. Un ou plusieurs champs obligatoires sont manquants.',
@@ -5587,14 +5587,14 @@ Chemin: `%2$s`
                 'TOOLS_DIRECT_INSTALL_URL_TITLE' => 'Instaliraj Paket kroz link',
                 'TOOLS_DIRECT_INSTALL_UPLOAD_BUTTON' => 'Uploadaj i instaliraj'
             ],
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Greška',
+                'ERROR_MESSAGE' => 'Uups. Izgleda da ova stranica ne postoji.'
+            ],
             'PLUGIN_EMAIL' => [
                 'EMAIL_NOT_CONFIGURED' => 'Email nije konfiguriran',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Konfigurirajte \'za\' (\'to\') adresu u postavkama Email dodatka ili u obrascu',
                 'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Konfigurirajte \'od\' (\'from\') adresu u postavkama Email dodatka ili u obrascu'
-            ],
-            'PLUGIN_ERROR' => [
-                'ERROR' => 'Greška',
-                'ERROR_MESSAGE' => 'Uups. Izgleda da ova stranica ne postoji.'
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Formular nije validiran. Jedan ili više traženih polja nedostaju.',
@@ -8358,14 +8358,14 @@ Aveți **2FA** activată pentru acest cont. Vă rugăm folosiți aplicația pent
                 'COMMAND' => 'Comandă',
                 'EXTRA_ARGUMENTS' => 'Argumente extra'
             ],
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Eroare',
+                'ERROR_MESSAGE' => 'Ooops. Se pare că pagina nu există.'
+            ],
             'PLUGIN_EMAIL' => [
                 'EMAIL_NOT_CONFIGURED' => 'Adresa de email nu este configurată',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Vă rugam setați o adresă \'către\' în setările modulului Email sau în formular',
                 'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Vă rugam setați o adresă \'de la\' în setările modulului Email sau în formular'
-            ],
-            'PLUGIN_ERROR' => [
-                'ERROR' => 'Eroare',
-                'ERROR_MESSAGE' => 'Ooops. Se pare că pagina nu există.'
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Formularul nu a fost validat. Unul sau mai multe câmpuri sunt goale.',
@@ -9450,6 +9450,11 @@ Calea: `%2$s`
                 'COMMAND' => 'Команда',
                 'EXTRA_ARGUMENTS' => 'Дополнительные аргументы'
             ],
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Ошибка',
+                'ERROR_MESSAGE' => 'Упс. Похоже, этой страницы не существует.',
+                'ROUTE_404' => 'Маршрут 404'
+            ],
             'PLUGIN_EMAIL' => [
                 'MAIL_ENGINE' => 'Почтовая система',
                 'MAIL_ENGINE_DISABLED' => 'Отключена',
@@ -9506,10 +9511,9 @@ Calea: `%2$s`
                 'TEST_EMAIL_BODY' => '<h1>Тестирование электронной почты</h1><p>Это тестовое письмо отправлено на основе следующей конфигурации:</p>  <p><pre>%1$s</pre></p>',
                 'EMAIL_FOOTER' => 'GetGrav.org'
             ],
-            'PLUGIN_ERROR' => [
-                'ERROR' => 'Ошибка',
-                'ERROR_MESSAGE' => 'Упс. Похоже, этой страницы не существует.',
-                'ROUTE_404' => 'Маршрут 404'
+            'PLUGIN_PROBLEMS' => [
+                'BUILTIN_CSS' => 'Использовать встроенный CSS',
+                'BUILTIN_CSS_HELP' => 'Использовать CSS, предоставленный плагином Problems'
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Форма не подтверждена. Отсутствует одно или несколько обязательных полей.',
@@ -9575,10 +9579,6 @@ Calea: `%2$s`
                 'DESTINATION_NOT_SPECIFIED' => 'Назначение не указано',
                 'INVALID_MIME_TYPE' => 'Тип MIME %s для файла %s не принимается.',
                 'INVALID_FILE_EXTENSION' => 'Расширение файла %s не является допустимым для файла.'
-            ],
-            'PLUGIN_PROBLEMS' => [
-                'BUILTIN_CSS' => 'Использовать встроенный CSS',
-                'BUILTIN_CSS_HELP' => 'Использовать CSS, предоставленный плагином Problems'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -10392,6 +10392,11 @@ title: %1$s
                 'BACKUPS_PROFILE_ROOT_FOLDER' => 'Коренева тека',
                 'COMMAND' => 'Команда'
             ],
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Помилка',
+                'ERROR_MESSAGE' => 'Упс. Схоже, цієї сторінки не існує.',
+                'ROUTE_404' => 'Маршрут 404'
+            ],
             'PLUGIN_EMAIL' => [
                 'EMAIL_NOT_CONFIGURED' => 'Електронна пошта не налаштована',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Будь ласка налаштуйте адресу одержувача (\'to\') в налаштуваннях плагіна Email Plugin, або на формі',
@@ -10399,10 +10404,9 @@ title: %1$s
                 'TEST_EMAIL_BODY' => '<h1>Тестування електронної пошти</h1><p>Це тестовий лист відправлено на основі такої конфігурації:</p>  <p><pre>%1$s</pre></p>',
                 'EMAIL_FOOTER' => 'GetGrav.org'
             ],
-            'PLUGIN_ERROR' => [
-                'ERROR' => 'Помилка',
-                'ERROR_MESSAGE' => 'Упс. Схоже, цієї сторінки не існує.',
-                'ROUTE_404' => 'Маршрут 404'
+            'PLUGIN_PROBLEMS' => [
+                'BUILTIN_CSS' => 'Використовувати вбудований CSS',
+                'BUILTIN_CSS_HELP' => 'Використовувати CSS, наданий плагіном Problems'
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Форма не підтверджена. Відсутнє одне або кілька обов\'язкових полів.',
@@ -10462,10 +10466,6 @@ title: %1$s
                 'DESTINATION_NOT_SPECIFIED' => 'Призначення не вказано',
                 'INVALID_MIME_TYPE' => 'Тип MIME %s для файла %s не приймається.',
                 'INVALID_FILE_EXTENSION' => 'Розширення файлу %s не є допустимим для файлу.'
-            ],
-            'PLUGIN_PROBLEMS' => [
-                'BUILTIN_CSS' => 'Використовувати вбудований CSS',
-                'BUILTIN_CSS_HELP' => 'Використовувати CSS, наданий плагіном Problems'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -14552,13 +14552,13 @@ Du har **2FA** aktiveret for denne konto. Benyt venligst din **2FA**-app til at 
                 '2FA_REGENERATE' => 'Regenerér',
                 'FORCE_LOWERCASE_URLS' => 'Brug små bogstaver i URL\'er'
             ],
-            'PLUGIN_EMAIL' => [
-                'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Konfigurere venligst en \'til\' email adresse i Email Plugin indstillingerne eller her i formularen',
-                'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Konfigurere venligst en \'fra\' email adresse i Email Plugin indstillingerne eller her i formularen'
-            ],
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Fejl',
                 'ERROR_MESSAGE' => 'Ups. Det ser ud til at siden ikke eksisterer.'
+            ],
+            'PLUGIN_EMAIL' => [
+                'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Konfigurere venligst en \'til\' email adresse i Email Plugin indstillingerne eller her i formularen',
+                'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Konfigurere venligst en \'fra\' email adresse i Email Plugin indstillingerne eller her i formularen'
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Formular ikke valideret. Et eller flere påkrævede felter mangler.',
@@ -19860,13 +19860,13 @@ La **2FA** è abilitata per questo account. Si prega di utilizzare la vostra app
                 'ROUTE_CANONICAL' => 'Route canonica',
                 'ROUTE_ALIASES' => 'Alias della route'
             ],
-            'PLUGIN_EMAIL' => [
-                'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Per favore, configura l\'indirizzo di destinazione (\'to\') nella configurazione del Plugin Email, oppure direttamente nella form.',
-                'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Per favore, configura l\'indirizzo di provenienza (\'from\') nella configurazione del Plugin Email, oppure direttamente nella form'
-            ],
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Errore',
                 'ERROR_MESSAGE' => 'Ooops. A quanto pare, questa pagina non esiste.'
+            ],
+            'PLUGIN_EMAIL' => [
+                'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Per favore, configura l\'indirizzo di destinazione (\'to\') nella configurazione del Plugin Email, oppure direttamente nella form.',
+                'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Per favore, configura l\'indirizzo di provenienza (\'from\') nella configurazione del Plugin Email, oppure direttamente nella form'
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Il Form risulta invalido. Uno o più campi risultano omessi.',

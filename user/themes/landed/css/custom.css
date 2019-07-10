@@ -79,7 +79,7 @@
 }
 
 #banner {
-  background-position: center left !important;
+  background-position: -10vw center !important;
   background-repeat: no-repeat;
   background-size: 70%;
   background-color: #000;
@@ -88,7 +88,7 @@
 }
 
 body.nav #banner {
-  background-position: -40vw -30vh !important;
+  background-position: -50vw -30vh !important;
   background-size: 100%;
 }
 
@@ -217,10 +217,10 @@ body.nav #banner .content {
 
 #nav {
   position: fixed;
-  width: 30vw;
+  width: 40vw;
   height: 0;
   top: 0;
-  left: 70vw;
+  left: 60vw;
   bottom: 0;
   right: 0;
   z-index: 99;
@@ -267,7 +267,7 @@ body.nav #banner .content {
   content: '';
   display: block;
   position: absolute;
-  top: 36px;
+  top: 64px;
   border-radius: 2px;
   width: 0px;
   left: -200px;
@@ -315,7 +315,7 @@ body.nav #banner .content {
 }
 
 #nav ul li .children-trigger + ul li:after {
-  top: 16px;
+  top: 34px;
 } 
 
 #nav ul li .children-trigger + ul li:hover:after,
@@ -332,6 +332,10 @@ body.nav #banner .content {
 .content img {
   max-width: 18em;
   max-height: 18em;
+}
+
+.keypoint {
+  width: 20% !important;
 }
 
 .keypoint img {

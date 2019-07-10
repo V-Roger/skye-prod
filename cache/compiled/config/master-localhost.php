@@ -1,102 +1,150 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1562421366,
-    'checksum' => 'f573903bc74d682538786b4785c06cf2',
+    'timestamp' => 1562777690,
+    'checksum' => 'c98d4742d50b292eadd6a159ac136264',
     'files' => [
         'user/config' => [
             'backups' => [
                 'file' => 'user/config/backups.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ],
             'themes/landed' => [
                 'file' => 'user/config/themes/landed.yaml',
-                'modified' => 1562174898
+                'modified' => 1562776865
             ]
         ],
         'system/config' => [
             'backups' => [
                 'file' => 'system/config/backups.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1562174897
+                'modified' => 1562776865
             ]
         ],
         'user/plugins' => [
-            'plugins/admin' => [
-                'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1562174898
+            'plugins/error' => [
+                'file' => 'user/plugins/error/error.yaml',
+                'modified' => 1562776865
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1562174898
-            ],
-            'plugins/error' => [
-                'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1562174899
-            ],
-            'plugins/form' => [
-                'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1562421365
-            ],
-            'plugins/login' => [
-                'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1562421358
-            ],
-            'plugins/markdown-notices' => [
-                'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1562174899
+                'modified' => 1562776865
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1562174900
+                'modified' => 1562776865
+            ],
+            'plugins/markdown-notices' => [
+                'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
+                'modified' => 1562776865
+            ],
+            'plugins/admin' => [
+                'file' => 'user/plugins/admin/admin.yaml',
+                'modified' => 1562776865
+            ],
+            'plugins/login' => [
+                'file' => 'user/plugins/login/login.yaml',
+                'modified' => 1562776865
+            ],
+            'plugins/form' => [
+                'file' => 'user/plugins/form/form.yaml',
+                'modified' => 1562776865
             ]
         ]
     ],
     'data' => [
         'plugins' => [
+            'error' => [
+                'enabled' => true,
+                'routes' => [
+                    404 => '/error'
+                ]
+            ],
+            'email' => [
+                'enabled' => true,
+                'from' => NULL,
+                'from_name' => NULL,
+                'to' => NULL,
+                'to_name' => NULL,
+                'queue' => [
+                    'enabled' => false,
+                    'flush_frequency' => '* * * * *',
+                    'flush_msg_limit' => 10,
+                    'flush_time_limit' => 100
+                ],
+                'mailer' => [
+                    'engine' => 'sendmail',
+                    'smtp' => [
+                        'server' => 'localhost',
+                        'port' => 25,
+                        'encryption' => 'none',
+                        'user' => '',
+                        'password' => ''
+                    ],
+                    'sendmail' => [
+                        'bin' => '/usr/sbin/sendmail -bs'
+                    ]
+                ],
+                'content_type' => 'text/html',
+                'debug' => false
+            ],
+            'problems' => [
+                'enabled' => true,
+                'built_in_css' => true
+            ],
+            'markdown-notices' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'level_classes' => [
+                    0 => 'yellow',
+                    1 => 'red',
+                    2 => 'blue',
+                    3 => 'green'
+                ]
+            ],
             'admin' => [
                 'enabled' => true,
                 'route' => '/admin',
@@ -161,65 +209,6 @@ return [
                     ]
                 ]
             ],
-            'email' => [
-                'enabled' => true,
-                'from' => NULL,
-                'from_name' => NULL,
-                'to' => NULL,
-                'to_name' => NULL,
-                'queue' => [
-                    'enabled' => false,
-                    'flush_frequency' => '* * * * *',
-                    'flush_msg_limit' => 10,
-                    'flush_time_limit' => 100
-                ],
-                'mailer' => [
-                    'engine' => 'sendmail',
-                    'smtp' => [
-                        'server' => 'localhost',
-                        'port' => 25,
-                        'encryption' => 'none',
-                        'user' => '',
-                        'password' => ''
-                    ],
-                    'sendmail' => [
-                        'bin' => '/usr/sbin/sendmail -bs'
-                    ]
-                ],
-                'content_type' => 'text/html',
-                'debug' => false
-            ],
-            'error' => [
-                'enabled' => true,
-                'routes' => [
-                    404 => '/error'
-                ]
-            ],
-            'form' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'inline_css' => true,
-                'refresh_prevention' => false,
-                'client_side_validation' => true,
-                'inline_errors' => false,
-                'files' => [
-                    'multiple' => false,
-                    'limit' => 10,
-                    'destination' => 'self@',
-                    'avoid_overwriting' => false,
-                    'random_name' => false,
-                    'filesize' => 0,
-                    'accept' => [
-                        0 => 'image/*'
-                    ]
-                ],
-                'recaptcha' => [
-                    'version' => '2-checkbox',
-                    'theme' => 'light',
-                    'site_key' => NULL,
-                    'secret_key' => NULL
-                ]
-            ],
             'login' => [
                 'enabled' => true,
                 'built_in_css' => true,
@@ -278,19 +267,30 @@ return [
                     ]
                 ]
             ],
-            'markdown-notices' => [
+            'form' => [
                 'enabled' => true,
                 'built_in_css' => true,
-                'level_classes' => [
-                    0 => 'yellow',
-                    1 => 'red',
-                    2 => 'blue',
-                    3 => 'green'
+                'inline_css' => true,
+                'refresh_prevention' => false,
+                'client_side_validation' => true,
+                'inline_errors' => false,
+                'files' => [
+                    'multiple' => false,
+                    'limit' => 10,
+                    'destination' => 'self@',
+                    'avoid_overwriting' => false,
+                    'random_name' => false,
+                    'filesize' => 0,
+                    'accept' => [
+                        0 => 'image/*'
+                    ]
+                ],
+                'recaptcha' => [
+                    'version' => '2-checkbox',
+                    'theme' => 'light',
+                    'site_key' => NULL,
+                    'secret_key' => NULL
                 ]
-            ],
-            'problems' => [
-                'enabled' => true,
-                'built_in_css' => true
             ]
         ],
         'backups' => [
