@@ -18,6 +18,16 @@
 		<a href="#{{ next_id }}" class="goto-next scrolly">Next</a>
 	{% endif %}
 	</section>
+<header>
+{% set intro_data = page.header.intro %}
+{% if intro_data.headline %}
+	<h2>{{ intro_data.headline }}</h2>
+	<p>{{ intro_data.byline }}</p>
+	{% else %}
+	{{ page.content }}
+	{{ dump('Notice: homepage intro section uses page content in place of frontmatter values because page header "intro.headline" is absent in frontmatter.') }}
+	{% endif %}
+</header>
 {% else %}
 	{{ dump('Notice: homepage banner section not rendered because page header "banner" is absent in frontmatter.') }}
 {% endif %}

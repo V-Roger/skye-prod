@@ -15,8 +15,7 @@ features:
     order:
         by: default
 signup:
-    headline: Contactez-moi
-    byline: 'Ante metus praesent faucibus ante integer id accumsan eleifend'
+    headline: Contact
     form:
         target: 'mailto:roger.virgil@gmail.com'
         placeholder: 'Adresse email'
@@ -35,4 +34,47 @@ key_points:
           # target: '#'
         - image: Nutrakk@2x.png
           # target: '#'
+form:
+    name: contact
+
+    fields:
+        name:
+          label: Vous
+          placeholder: Votre nom
+          autocomplete: on
+          type: text
+          validate:
+            required: true
+        email:
+          label: Votre email
+          placeholder: sounds@skye-prod.com
+          autocomplete: on
+          type: email
+          validate:
+            required: true
+
+        message:
+          label: Votre message
+          placeholder: Bonjour, 
+          type: textarea
+          classes: full-width
+          validate:
+            required: true
+
+    buttons:
+        submit:
+          type: submit
+          value: C'est parti !
+
+    process:
+        save:
+            fileprefix: contact-
+            dateformat: Ymd-His-u
+            extension: txt
+            body: "{% include 'forms/data.txt.twig' %}"
+        email:
+            subject: "[Site Contact Form] {{ form.value.name|e }}"
+            body: "{% include 'forms/data.html.twig' %}"
+        message: Merci !
+        display: thankyou
 ---

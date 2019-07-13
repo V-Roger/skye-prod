@@ -171,9 +171,15 @@ body.nav #banner .content {
   font-size: 1.5em;
 }
 
-#intro header {
-  padding-bottom: 10vh;
+#intro header,
+#banner + header {
   text-align: center;
+}
+
+#banner + header {
+  background: rgba(24, 24, 24, 0.95);
+  padding-bottom: 10vh;
+  padding-top: 10vh;
 }
 
 .spotlight {
@@ -207,12 +213,51 @@ body.nav #banner .content {
 
 #signup h2,
 #signup header p,
-#signup #email {
+#signup input,
+#signup label,
+#signup textarea {
   color: #000;
 }
 
-#signup #email {
+#signup input,
+#signup textarea {
   border-color: #000;
+}
+
+#signup input::-webkit-input-placeholder {
+color: #2c3e50;
+}
+
+#signup button {
+  background: #e44c65;
+}
+
+#signup button:hover,
+#signup button:focus {
+  background: #FFFFFF;
+  color: #e44c65;
+}
+
+#contact {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#contact .form-field {
+  flex: 1 1 50%;
+  padding: 24px;
+}
+
+#contact .form-field:nth-of-type(3) {
+  flex: 1 1 100%;
+}
+
+#contact .buttons {
+  flex: 1 1 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: center;
 }
 
 #nav {

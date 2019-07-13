@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1562777690,
-    'checksum' => 'c98d4742d50b292eadd6a159ac136264',
+    'timestamp' => 1563013874,
+    'checksum' => 'c5745201d137f9cb1faae33fc9f183ce',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -12,6 +12,14 @@ return [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1562776865
+            ],
+            'plugins/email' => [
+                'file' => 'user/config/plugins/email.yaml',
+                'modified' => 1563013874
+            ],
+            'plugins/form' => [
+                'file' => 'user/config/plugins/form.yaml',
+                'modified' => 1562944385
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
@@ -105,9 +113,9 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => NULL,
-                'from_name' => NULL,
-                'to' => NULL,
+                'from' => 'roger.virgil@gmail.com',
+                'from_name' => 'Skye Prod',
+                'to' => 'roger.virgil@gmail.com',
                 'to_name' => NULL,
                 'queue' => [
                     'enabled' => false,
@@ -129,7 +137,7 @@ return [
                     ]
                 ],
                 'content_type' => 'text/html',
-                'debug' => false
+                'debug' => true
             ],
             'problems' => [
                 'enabled' => true,
@@ -273,7 +281,7 @@ return [
                 'inline_css' => true,
                 'refresh_prevention' => false,
                 'client_side_validation' => true,
-                'inline_errors' => false,
+                'inline_errors' => true,
                 'files' => [
                     'multiple' => false,
                     'limit' => 10,
@@ -286,8 +294,8 @@ return [
                     ]
                 ],
                 'recaptcha' => [
-                    'version' => '2-checkbox',
-                    'theme' => 'light',
+                    'version' => '3',
+                    'theme' => 'dark',
                     'site_key' => NULL,
                     'secret_key' => NULL
                 ]
