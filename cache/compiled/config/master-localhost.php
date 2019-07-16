@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1563013874,
-    'checksum' => 'c5745201d137f9cb1faae33fc9f183ce',
+    'timestamp' => 1563307307,
+    'checksum' => '080e05dea238604d7424089b263cb5f3',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -20,6 +20,10 @@ return [
             'plugins/form' => [
                 'file' => 'user/config/plugins/form.yaml',
                 'modified' => 1562944385
+            ],
+            'plugins/maintenance' => [
+                'file' => 'user/config/plugins/maintenance.yaml',
+                'modified' => 1563307307
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
@@ -92,6 +96,10 @@ return [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
                 'modified' => 1562776865
+            ],
+            'plugins/maintenance' => [
+                'file' => 'user/plugins/maintenance/maintenance.yaml',
+                'modified' => 1563307282
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
@@ -216,6 +224,13 @@ return [
                         'visitors' => 20
                     ]
                 ]
+            ],
+            'maintenance' => [
+                'enabled' => true,
+                'active' => false,
+                'allow_login' => false,
+                'login_access' => 'site.login',
+                'maintenance_page_route' => NULL
             ],
             'login' => [
                 'enabled' => true,

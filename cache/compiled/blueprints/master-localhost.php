@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1562777691,
-    'checksum' => '9b911ed509f62efb0938d6cf1a376af7',
+    'timestamp' => 1563307282,
+    'checksum' => 'b0b78b7fa6dcfa60e83a20a5b78a3ad9',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -60,6 +60,10 @@ return [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
                 'modified' => 1562776865
+            ],
+            'plugins/maintenance' => [
+                'file' => 'user/plugins/maintenance/blueprints.yaml',
+                'modified' => 1563307282
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
@@ -3382,6 +3386,73 @@ return [
                 'name' => 'plugins.admin.popularity.history.visitors',
                 'validation' => 'loose'
             ],
+            'plugins.maintenance' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.maintenance.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_MAINTENANCE.BLUEPRINTS.STATUS',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.maintenance.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.maintenance.active' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_MAINTENANCE.BLUEPRINTS.MODE',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.maintenance.active',
+                'validation' => 'strict'
+            ],
+            'plugins.maintenance.allow_login' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_MAINTENANCE.BLUEPRINTS.ALLOW_LOGIN',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.maintenance.allow_login',
+                'validation' => 'strict'
+            ],
+            'plugins.maintenance.login_access' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_MAINTENANCE.BLUEPRINTS.ACCESS',
+                'size' => 'medium',
+                'default' => 'login_access',
+                'name' => 'plugins.maintenance.login_access',
+                'validation' => 'strict'
+            ],
+            'plugins.maintenance.maintenance_page_route' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_MAINTENANCE.BLUEPRINTS.PAGE_ROUTE',
+                'size' => 'medium',
+                'name' => 'plugins.maintenance.maintenance_page_route',
+                'validation' => 'strict'
+            ],
             'plugins.login' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -4424,6 +4495,13 @@ return [
                     'dashboard' => [
                         'days_of_stats' => 'plugins.admin.dashboard.days_of_stats'
                     ]
+                ],
+                'maintenance' => [
+                    'enabled' => 'plugins.maintenance.enabled',
+                    'active' => 'plugins.maintenance.active',
+                    'allow_login' => 'plugins.maintenance.allow_login',
+                    'login_access' => 'plugins.maintenance.login_access',
+                    'maintenance_page_route' => 'plugins.maintenance.maintenance_page_route'
                 ],
                 'login' => [
                     'enabled' => 'plugins.login.enabled',

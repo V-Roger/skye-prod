@@ -32,7 +32,7 @@ key_points:
           # target: '#'
         - image: overdrive@2x.png
           # target: '#'
-        - image: Nutrakk@2x.png
+        - image: logo_nutrakk.png
           # target: '#'
 form:
     name: contact
