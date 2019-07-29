@@ -28,15 +28,8 @@
 }
 
 #page-wrapper {
-  /* padding: 15px !important; */
   padding: 0 !important;
   background: #FCFCFC;
-}
-
-@media screen and (max-width: 800px) {
-  #page-wrapper {
-    /* padding: 10px !important; */
-  }
 }
 
 #header {
@@ -109,7 +102,7 @@ body.nav #banner .content {
 }
 
 #banner .content p {
-  font-family: Less !important;
+  font-family: Less, sans-serif !important;
   letter-spacing: 0.15em;
   font-weight: normal;
   margin: 0 !important;
@@ -179,7 +172,6 @@ body.nav #banner .content {
 #banner + header {
   background: rgba(24, 24, 24, 0.95);
   padding-bottom: 10vh;
-  padding-top: 10vh;
 }
 
 .spotlight {
@@ -209,6 +201,10 @@ body.nav #banner .content {
 #signup {
   background: #FFFFFF;
   color: #000;
+}
+
+#signup h2 {
+  text-transform: uppercase;
 }
 
 #signup h2,

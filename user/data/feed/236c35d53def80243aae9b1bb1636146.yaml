@@ -1,4 +1,4 @@
-last_checked: 1563307152
+last_checked: 1564126288
 data:
   -
     title: 'Grav 1.6 Released!'
@@ -34,12 +34,12 @@ data:
     title: 'Vote for Grav in the 2018 CMS Critic People''s Choice Awards'
     url: 'https://getgrav.org/blog/cms-critic-award-finalists-2018'
     date: 1539096480
-    nicetime: '9 months ago'
+    nicetime: '10 months ago'
   -
     title: 'New XSS Protection Available in Grav 1.5.2'
     url: 'https://getgrav.org/blog/new-xss-protection'
     date: 1538411400
-    nicetime: '9 months ago'
+    nicetime: '10 months ago'
   -
     title: 'macOS 10.14 Mojave Apache Setup: Upgrading Homebrew'
     url: 'https://getgrav.org/blog/macos-mojave-apache-upgrade-homebrew'

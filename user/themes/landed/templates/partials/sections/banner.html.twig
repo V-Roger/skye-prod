@@ -21,6 +21,7 @@
 <header>
 {% set intro_data = page.header.intro %}
 {% if intro_data.headline %}
+	<span class="image fit main"><img src="{{ url('theme://images/' ~ (intro_data.intro_image ?: 'pic02.jpg') ) }}" alt="{{ intro_data.hero_alt }}" /></span>
 	<h2>{{ intro_data.headline }}</h2>
 	<p>{{ intro_data.byline }}</p>
 	{% else %}

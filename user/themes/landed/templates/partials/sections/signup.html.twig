@@ -1,9 +1,8 @@
-{% if page.header.signup %}
-	{% set signup_data = page.header.signup %}
+	{% set signup_data = page.header.form %}
 	<section id="{{ id }}" class="wrapper special fade">
 		<div class="container">
 			<header>
-				<h2>{{ signup_data.headline }}</h2>
+				<h2>{{ signup_data.name }}</h2>
 				<p>{{ signup_data.byline }}</p>
 			</header>
 			<!--<form method="post" action="{{ signup_data.form.target }}" class="cta">
@@ -16,6 +15,3 @@
 			{% include "forms/form.html.twig" %}
 		</div>
 	</section>
-{% else %}
-	{{ dump('Notice: homepage signup section not rendered because page header "signup" is absent in frontmatter.') }}
-{% endif %}

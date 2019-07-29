@@ -16,13 +16,44 @@ sidebars:
         -
             path: /dummy/amet
             button_text: Commander
-signup:
-    headline: Contactez-moi
-    byline: 'Ante metus praesent faucibus ante integer id accumsan eleifend'
-    form:
-        target: 'mailto:roger.virgil@gmail.com'
-        placeholder: 'Adresse email'
-        button_text: 'C''est parti'
+form:
+    name: contact
+    fields:
+        name:
+            label: Vous
+            placeholder: 'Votre nom'
+            autocomplete: 'on'
+            type: text
+            validate:
+                required: true
+        email:
+            label: 'Votre email'
+            placeholder: sounds@skye-prod.com
+            autocomplete: 'on'
+            type: email
+            validate:
+                required: true
+        message:
+            label: 'Votre message'
+            placeholder: 'Bonjour,'
+            type: textarea
+            classes: full-width
+            validate:
+                required: true
+    buttons:
+        submit:
+            type: submit
+            value: 'C''est parti !'
+    process:
+        save:
+            fileprefix: contact-
+            dateformat: Ymd-His-u
+            extension: txt
+            body: '{% include ''forms/data.txt.twig'' %}'
+        email:
+            subject: '[Site Contact Form] {{ form.value.name|e }}'
+            body: '{% include ''forms/data.html.twig'' %}'
+        message: 'Merci !'
 ---
 
 L’immersion d’un spectateur est fondamentale et s’opère grâce à l’alchimie entre la voix et l’image, qui doivent concorder le plus naturellement possible pour savoir se faire oublier. La mission de Skye Prod est de trouver cette osmose parfaite pour donner la vie à vos images et un sens à vos projets.
